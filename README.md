@@ -1,3 +1,3 @@
-# Predator's Clock Scren Saver
+# Predator's Clock Screensaver
 
-![Predator's screen saver](Screenshots/main.png)
+![Predator's screensaver](Screenshots/main.png)
