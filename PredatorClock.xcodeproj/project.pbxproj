@@ -8,10 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		356E4FB022835050002FF647 /* CoordinateSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356E4FAF22835050002FF647 /* CoordinateSystem.swift */; };
-		356E4FB222835140002FF647 /* PredatorSpaceSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356E4FB122835140002FF647 /* PredatorSpaceSystem.swift */; };
 		356E4FB422835C63002FF647 /* PredatorClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356E4FB322835C63002FF647 /* PredatorClock.swift */; };
 		35810FC22284B7BC005852DE /* CoordinateSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356E4FAF22835050002FF647 /* CoordinateSystem.swift */; };
-		35810FC32284B7BF005852DE /* PredatorSpaceSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356E4FB122835140002FF647 /* PredatorSpaceSystem.swift */; };
 		35810FC42284B7C2005852DE /* PredatorClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356E4FB322835C63002FF647 /* PredatorClock.swift */; };
 		35A6AB1A2285EE4A00F92642 /* PredatorClockSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A6AB192285EE4A00F92642 /* PredatorClockSettings.swift */; };
 		35A6AB1C2285EE5300F92642 /* PredatorClockSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A6AB192285EE4A00F92642 /* PredatorClockSettings.swift */; };
@@ -51,7 +49,6 @@
 
 /* Begin PBXFileReference section */
 		356E4FAF22835050002FF647 /* CoordinateSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinateSystem.swift; sourceTree = "<group>"; };
-		356E4FB122835140002FF647 /* PredatorSpaceSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredatorSpaceSystem.swift; sourceTree = "<group>"; };
 		356E4FB322835C63002FF647 /* PredatorClock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredatorClock.swift; sourceTree = "<group>"; };
 		35A6AB192285EE4A00F92642 /* PredatorClockSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredatorClockSettings.swift; sourceTree = "<group>"; };
 		35C1530422820A34005B24A9 /* PredatorClock.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PredatorClock.saver; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -147,7 +144,6 @@
 			children = (
 				35C1532E22821C94005B24A9 /* PredatorClockCore.h */,
 				356E4FAF22835050002FF647 /* CoordinateSystem.swift */,
-				356E4FB122835140002FF647 /* PredatorSpaceSystem.swift */,
 				35A6AB192285EE4A00F92642 /* PredatorClockSettings.swift */,
 				356E4FB322835C63002FF647 /* PredatorClock.swift */,
 				35C1533B22821CF3005B24A9 /* Support Files */,
@@ -336,7 +332,6 @@
 				35A6AB1C2285EE5300F92642 /* PredatorClockSettings.swift in Sources */,
 				35C1531222820ADF005B24A9 /* PredatorClockView.swift in Sources */,
 				35810FC42284B7C2005852DE /* PredatorClock.swift in Sources */,
-				35810FC32284B7BF005852DE /* PredatorSpaceSystem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,7 +350,6 @@
 			files = (
 				35A6AB1A2285EE4A00F92642 /* PredatorClockSettings.swift in Sources */,
 				356E4FB422835C63002FF647 /* PredatorClock.swift in Sources */,
-				356E4FB222835140002FF647 /* PredatorSpaceSystem.swift in Sources */,
 				356E4FB022835050002FF647 /* CoordinateSystem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,14 +9,14 @@
 import ScreenSaver
 
 class PredatorClockView: ScreenSaverView {
-    private let predator = PredatorClockScreenSaver()
+    private let predator = PredatorClock()
     
     override var isAnimating: Bool {
         return true
     }
     
     override var hasConfigureSheet: Bool {
-        return false
+        return true
     }
     
     override func draw(_ rect: NSRect) {
@@ -25,5 +25,9 @@ class PredatorClockView: ScreenSaverView {
         if let context = NSGraphicsContext.current?.cgContext {
             predator.draw(in: rect, context: context)
         }
+    }
+    
+    override var configureSheet: NSWindow? {
+        return nil
     }
 }
