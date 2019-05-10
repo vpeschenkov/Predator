@@ -10,7 +10,7 @@ import Cocoa
 import PredatorClockCore
 
 class PredatorClockView: NSView {
-    private let predator = PredatorClockScreenSaver()
+    private let predator = PredatorClock()
     
     required init?(coder decoder: NSCoder) {
         super.init(coder: decoder)

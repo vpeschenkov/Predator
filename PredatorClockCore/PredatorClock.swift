@@ -11,7 +11,7 @@ import QuartzCore
 
 // MARK:- Predator Clock Screen Saver
 
-open class PredatorClockScreenSaver {
+open class PredatorClock {
     
     private var space: CoordinateSystem?
     
@@ -57,7 +57,7 @@ open class PredatorClockScreenSaver {
     // MARK:- Hours
     
     func drawPredatorHourHight(in rect: CGRect, context: CGContext, value: Int) {
-        let width = rect.size.width * 0.387
+        let width = rect.size.width * 0.384
         let height = width * 0.2
         let shape = CGSize(width: width, height: height)
         let center = CGPoint(x: rect.origin.x + rect.width / 2.0, y: rect.origin.y + rect.height / 2.0)
@@ -66,15 +66,17 @@ open class PredatorClockScreenSaver {
         }
         // Define lines
         let p1 = CGPoint(x: center.x + shape.height / 2.0, y: rect.origin.y + rect.height - shape.width)
-        let p2 = CGPoint(x: p1.x - shape.width * 1.268, y: p1.y + shape.height * 0.343)
+        let p2 = CGPoint(x: p1.x - shape.width * 1.268, y: p1.y - shape.height * 0.343)
         let p3 = CGPoint(x: p1.x + shape.width * 0.068, y: p1.y - shape.height * 0.343)
-        let p4 = CGPoint(x: p1.x - shape.width * 1.037, y: p1.y - shape.width * 0.876)
-        let p5 = CGPoint(x: p1.x + shape.width * 0.142, y: p1.y - shape.width * 0.234)
-        let p6 = CGPoint(x: p4.x - shape.width * 0.137, y: p4.y - shape.height * 0.774)
-        let p7 = CGPoint(x: p1.x, y: p6.y - shape.width * 1.743)
-        let p8 = CGPoint(x: p1.x + shape.width * 0.378, y: p7.y - shape.height * 0.378)
-        let p9 = CGPoint(x: p1.x + shape.width * 0.117, y: p7.y + shape.width)
+        let p4 = CGPoint(x: p1.x - shape.width * 1.013, y: p1.y - shape.width * 0.934)
+        let p5 = CGPoint(x: p1.x + shape.width * 0.113, y: p1.y - shape.width * 0.234)
+        let p6 = CGPoint(x: p4.x - shape.width * 0.137, y: p4.y - shape.height * 0.431)
+        let p7 = CGPoint(x: p1.x, y: p6.y - shape.width * 1.543)
+        let p8 = CGPoint(x: p1.x + shape.width * 0.313, y: p7.y - shape.height)
+        let p9 = CGPoint(x: p1.x + shape.width * 0.268, y: p6.y - shape.width * 0.713)
         // Drawing
+//        context.setStrokeColor(CGColor(red: 0.0, green: 1.0, blue: 0.0, alpha: 1.0))
+//        context.stroke(rect)
         draw(p1, 90, (value >= 1))
         draw(p2, 0, (value >= 1))
         draw(p3, 0, (value >= 1))
@@ -87,7 +89,7 @@ open class PredatorClockScreenSaver {
     }
     
     func drawPredatorHourLow(in rect: CGRect, context: CGContext, value: Int) {
-        let width = rect.size.width * 0.387
+        let width = rect.size.width * 0.384
         let height = width * 0.2
         let shape = CGSize(width: width, height: height)
         let center = CGPoint(x: rect.origin.x + rect.width / 2.0, y: rect.origin.y + rect.height / 2.0)
@@ -96,14 +98,14 @@ open class PredatorClockScreenSaver {
         }
         // Define lines
         let p1 = CGPoint(x: center.x + shape.height / 2.0, y: rect.origin.y + rect.height - shape.width)
-        let p2 = CGPoint(x: p1.x - shape.width * 1.268, y: p1.y + shape.height * 0.343)
+        let p2 = CGPoint(x: p1.x - shape.width * 1.268, y: p1.y - shape.height * 0.343)
         let p3 = CGPoint(x: p1.x + shape.width * 0.068, y: p1.y - shape.height * 0.343)
-        let p4 = CGPoint(x: p1.x - shape.width * 1.037, y: p1.y - shape.width * 0.876)
-        let p5 = CGPoint(x: p1.x + shape.width * 0.142, y: p1.y - shape.width * 0.234)
-        let p6 = CGPoint(x: p4.x - shape.width * 0.137, y: p4.y - shape.height * 0.774)
-        let p7 = CGPoint(x: p1.x, y: p6.y - shape.width * 1.743)
-        let p8 = CGPoint(x: p1.x + shape.width * 0.378, y: p7.y - shape.height * 0.378)
-        let p9 = CGPoint(x: p1.x + shape.width * 0.117, y: p7.y + shape.width)
+        let p4 = CGPoint(x: p1.x - shape.width * 1.013, y: p1.y - shape.width * 0.934)
+        let p5 = CGPoint(x: p1.x + shape.width * 0.113, y: p1.y - shape.width * 0.234)
+        let p6 = CGPoint(x: p4.x - shape.width * 0.137, y: p4.y - shape.height * 0.431)
+        let p7 = CGPoint(x: p1.x, y: p6.y - shape.width * 1.543)
+        let p8 = CGPoint(x: p1.x + shape.width * 0.313, y: p7.y - shape.height)
+        let p9 = CGPoint(x: p1.x + shape.width * 0.268, y: p6.y - shape.width * 0.713)
         // Drawing
         draw(p1, 90, (value >= 1))
         draw(p2, 0, (value >= 2))
@@ -112,14 +114,14 @@ open class PredatorClockScreenSaver {
         draw(p5, -45, (value >= 5))
         draw(p6, -45, (value >= 6))
         draw(p7, 90, (value >= 7))
-        draw(p8, 90, (value >= 8))
-        draw(p9, 45, (value >= 9))
+        draw(p8, 90, (value >= 9))
+        draw(p9, 45, (value >= 8))
     }
     
     // MARK:- Minutes
     
     func drawPredatorMinuteHight(in rect: CGRect, context: CGContext, value: Int) {
-        let width = rect.size.width * 0.387
+        let width = rect.size.width * 0.384
         let height = width * 0.2
         let shape = CGSize(width: width, height: height)
         let center = CGPoint(x: rect.origin.x + rect.width / 2.0, y: rect.origin.y + rect.height / 2.0)
@@ -128,14 +130,14 @@ open class PredatorClockScreenSaver {
         }
         // Define lines
         let p1 = CGPoint(x: center.x + shape.height / 2.0, y: rect.origin.y + rect.height - shape.width)
-        let p2 = CGPoint(x: p1.x - shape.width * 1.268, y: p1.y + shape.height * 0.343)
+        let p2 = CGPoint(x: p1.x - shape.width * 1.268, y: p1.y - shape.height * 0.343)
         let p3 = CGPoint(x: p1.x + shape.width * 0.068, y: p1.y - shape.height * 0.343)
-        let p4 = CGPoint(x: p1.x - shape.width * 1.037, y: p1.y - shape.width * 0.876)
-        let p5 = CGPoint(x: p1.x + shape.width * 0.142, y: p1.y - shape.width * 0.234)
-        let p6 = CGPoint(x: p4.x - shape.width * 0.137, y: p4.y - shape.height * 0.774)
-        let p7 = CGPoint(x: p1.x, y: p6.y - shape.width * 1.743)
-        let p8 = CGPoint(x: p1.x + shape.width * 0.378, y: p7.y - shape.height * 0.378)
-        let p9 = CGPoint(x: p1.x + shape.width * 0.117, y: p7.y + shape.width)
+        let p4 = CGPoint(x: p1.x - shape.width * 1.013, y: p1.y - shape.width * 0.934)
+        let p5 = CGPoint(x: p1.x + shape.width * 0.113, y: p1.y - shape.width * 0.234)
+        let p6 = CGPoint(x: p4.x - shape.width * 0.137, y: p4.y - shape.height * 0.431)
+        let p7 = CGPoint(x: p1.x, y: p6.y - shape.width * 1.543)
+        let p8 = CGPoint(x: p1.x + shape.width * 0.313, y: p7.y - shape.height)
+        let p9 = CGPoint(x: p1.x + shape.width * 0.268, y: p6.y - shape.width * 0.713)
         // Drawing
         draw(p1, 90, (value >= 1))
         draw(p2, 0, (value >= 1))
@@ -149,7 +151,7 @@ open class PredatorClockScreenSaver {
     }
     
     func drawPredatorMinuteLow(in rect: CGRect, context: CGContext, value: Int) {
-        let width = rect.size.width * 0.387
+        let width = rect.size.width * 0.384
         let height = width * 0.2
         let shape = CGSize(width: width, height: height)
         let center = CGPoint(x: rect.origin.x + rect.width / 2.0, y: rect.origin.y + rect.height / 2.0)
@@ -158,14 +160,14 @@ open class PredatorClockScreenSaver {
         }
         // Define lines
         let p1 = CGPoint(x: center.x + shape.height / 2.0, y: rect.origin.y + rect.height - shape.width)
-        let p2 = CGPoint(x: p1.x - shape.width * 1.268, y: p1.y + shape.height * 0.343)
+        let p2 = CGPoint(x: p1.x - shape.width * 1.268, y: p1.y - shape.height * 0.343)
         let p3 = CGPoint(x: p1.x + shape.width * 0.068, y: p1.y - shape.height * 0.343)
-        let p4 = CGPoint(x: p1.x - shape.width * 1.037, y: p1.y - shape.width * 0.876)
-        let p5 = CGPoint(x: p1.x + shape.width * 0.142, y: p1.y - shape.width * 0.234)
-        let p6 = CGPoint(x: p4.x - shape.width * 0.137, y: p4.y - shape.height * 0.774)
-        let p7 = CGPoint(x: p1.x, y: p6.y - shape.width * 1.743)
-        let p8 = CGPoint(x: p1.x + shape.width * 0.378, y: p7.y - shape.height * 0.378)
-        let p9 = CGPoint(x: p1.x + shape.width * 0.117, y: p7.y + shape.width)
+        let p4 = CGPoint(x: p1.x - shape.width * 1.013, y: p1.y - shape.width * 0.934)
+        let p5 = CGPoint(x: p1.x + shape.width * 0.113, y: p1.y - shape.width * 0.234)
+        let p6 = CGPoint(x: p4.x - shape.width * 0.137, y: p4.y - shape.height * 0.431)
+        let p7 = CGPoint(x: p1.x, y: p6.y - shape.width * 1.543)
+        let p8 = CGPoint(x: p1.x + shape.width * 0.313, y: p7.y - shape.height)
+        let p9 = CGPoint(x: p1.x + shape.width * 0.268, y: p6.y - shape.width * 0.713)
         // Drawing
         draw(p1, 90, (value >= 1))
         draw(p2, 0, (value >= 2))
@@ -174,8 +176,8 @@ open class PredatorClockScreenSaver {
         draw(p5, -45, (value >= 5))
         draw(p6, -45, (value >= 6))
         draw(p7, 90, (value >= 7))
-        draw(p8, 90, (value >= 8))
-        draw(p9, 45, (value >= 9))
+        draw(p8, 90, (value >= 9))
+        draw(p9, 45, (value >= 8))
     }
     
     // MARK:- Drawing
@@ -184,11 +186,12 @@ open class PredatorClockScreenSaver {
         context.saveGState()
         var color = CGColor(red: 1.0, green: 0.0, blue: 0.0, alpha: 1.0)
         if !enabled {
-            color = CGColor(red: 1.0, green: 0.0, blue: 0.0, alpha: 0.1)
+            color = CGColor(red: 1.0, green: 0.0, blue: 0.0, alpha: 0.3)
         }
         context.rotate(point, angle: angle)
         context.setFillColor(color)
-        context.setShadow(offset: .zero, blur: 15.0, color: color)
+        context.setStrokeColor(CGColor(red: 1.0, green: 0.0, blue: 0.0, alpha: 1.0))
+        context.setShadow(offset: .zero, blur: 10.0, color: color)
         context.addPath(self.buildPredatorShapePath(in: CGRect(
             x: point.x,
             y: point.y,
@@ -197,6 +200,16 @@ open class PredatorClockScreenSaver {
         )))
         context.closePath()
         context.fillPath()
+        if !enabled {
+            context.addPath(self.buildPredatorShapePath(in: CGRect(
+                x: point.x,
+                y: point.y,
+                width: shape.width,
+                height: shape.height
+            )))
+            context.closePath()
+            context.strokePath()
+        }
         context.restoreGState()
     }
     
