@@ -1,0 +1,693 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		356E4FB022835050002FF647 /* CoordinateSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356E4FAF22835050002FF647 /* CoordinateSystem.swift */; };
+		356E4FB222835140002FF647 /* PredatorSpaceSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356E4FB122835140002FF647 /* PredatorSpaceSystem.swift */; };
+		356E4FB422835C63002FF647 /* PredatorClockScreenSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356E4FB322835C63002FF647 /* PredatorClockScreenSaver.swift */; };
+		35810FC22284B7BC005852DE /* CoordinateSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356E4FAF22835050002FF647 /* CoordinateSystem.swift */; };
+		35810FC32284B7BF005852DE /* PredatorSpaceSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356E4FB122835140002FF647 /* PredatorSpaceSystem.swift */; };
+		35810FC42284B7C2005852DE /* PredatorClockScreenSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356E4FB322835C63002FF647 /* PredatorClockScreenSaver.swift */; };
+		35C1531222820ADF005B24A9 /* PredatorClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C1531122820ADF005B24A9 /* PredatorClockView.swift */; };
+		35C1531A228219EB005B24A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C15319228219EB005B24A9 /* AppDelegate.swift */; };
+		35C1531C228219ED005B24A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35C1531B228219ED005B24A9 /* Assets.xcassets */; };
+		35C1531F228219ED005B24A9 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35C1531D228219ED005B24A9 /* MainMenu.xib */; };
+		35C1532622821B2F005B24A9 /* PredatorClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C1532522821B2F005B24A9 /* PredatorClockView.swift */; };
+		35C1533022821C94005B24A9 /* PredatorClockCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 35C1532E22821C94005B24A9 /* PredatorClockCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		35C1533322821C94005B24A9 /* PredatorClockCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35C1532C22821C94005B24A9 /* PredatorClockCore.framework */; };
+		35C1533422821C94005B24A9 /* PredatorClockCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 35C1532C22821C94005B24A9 /* PredatorClockCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		35C1533122821C94005B24A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35C152FB22820A34005B24A9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 35C1532B22821C94005B24A9;
+			remoteInfo = PredatorClockCore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		35C1533822821C94005B24A9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				35C1533422821C94005B24A9 /* PredatorClockCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		356E4FAF22835050002FF647 /* CoordinateSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinateSystem.swift; sourceTree = "<group>"; };
+		356E4FB122835140002FF647 /* PredatorSpaceSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredatorSpaceSystem.swift; sourceTree = "<group>"; };
+		356E4FB322835C63002FF647 /* PredatorClockScreenSaver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredatorClockScreenSaver.swift; sourceTree = "<group>"; };
+		35C1530422820A34005B24A9 /* PredatorClock.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PredatorClock.saver; sourceTree = BUILT_PRODUCTS_DIR; };
+		35C1530B22820A34005B24A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35C1531122820ADF005B24A9 /* PredatorClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredatorClockView.swift; sourceTree = "<group>"; };
+		35C15317228219EB005B24A9 /* PredatorClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PredatorClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		35C15319228219EB005B24A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		35C1531B228219ED005B24A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		35C1531E228219ED005B24A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		35C15320228219ED005B24A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35C15321228219ED005B24A9 /* PredatorClockSandbox.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PredatorClockSandbox.entitlements; sourceTree = "<group>"; };
+		35C1532522821B2F005B24A9 /* PredatorClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredatorClockView.swift; sourceTree = "<group>"; };
+		35C1532C22821C94005B24A9 /* PredatorClockCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PredatorClockCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		35C1532E22821C94005B24A9 /* PredatorClockCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PredatorClockCore.h; sourceTree = "<group>"; };
+		35C1532F22821C94005B24A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		35C1530122820A34005B24A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35C15314228219EB005B24A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35C1533322821C94005B24A9 /* PredatorClockCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35C1532922821C94005B24A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		35810FBE2284B0F0005852DE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		35C152FA22820A34005B24A9 = {
+			isa = PBXGroup;
+			children = (
+				35C1530622820A34005B24A9 /* PredatorClock */,
+				35C15318228219EB005B24A9 /* PredatorClockSandbox */,
+				35C1532D22821C94005B24A9 /* PredatorClockCore */,
+				35C1530522820A34005B24A9 /* Products */,
+				35810FBE2284B0F0005852DE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		35C1530522820A34005B24A9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35C1530422820A34005B24A9 /* PredatorClock.saver */,
+				35C15317228219EB005B24A9 /* PredatorClock.app */,
+				35C1532C22821C94005B24A9 /* PredatorClockCore.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35C1530622820A34005B24A9 /* PredatorClock */ = {
+			isa = PBXGroup;
+			children = (
+				35C1531122820ADF005B24A9 /* PredatorClockView.swift */,
+				35C1533A22821CE2005B24A9 /* Support Files */,
+			);
+			path = PredatorClock;
+			sourceTree = "<group>";
+		};
+		35C15318228219EB005B24A9 /* PredatorClockSandbox */ = {
+			isa = PBXGroup;
+			children = (
+				35C15319228219EB005B24A9 /* AppDelegate.swift */,
+				35C1532522821B2F005B24A9 /* PredatorClockView.swift */,
+				35C1533922821CC3005B24A9 /* Support Files */,
+			);
+			path = PredatorClockSandbox;
+			sourceTree = "<group>";
+		};
+		35C1532D22821C94005B24A9 /* PredatorClockCore */ = {
+			isa = PBXGroup;
+			children = (
+				35C1532E22821C94005B24A9 /* PredatorClockCore.h */,
+				356E4FAF22835050002FF647 /* CoordinateSystem.swift */,
+				356E4FB122835140002FF647 /* PredatorSpaceSystem.swift */,
+				356E4FB322835C63002FF647 /* PredatorClockScreenSaver.swift */,
+				35C1533B22821CF3005B24A9 /* Support Files */,
+			);
+			path = PredatorClockCore;
+			sourceTree = "<group>";
+		};
+		35C1533922821CC3005B24A9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				35C1531B228219ED005B24A9 /* Assets.xcassets */,
+				35C1531D228219ED005B24A9 /* MainMenu.xib */,
+				35C15320228219ED005B24A9 /* Info.plist */,
+				35C15321228219ED005B24A9 /* PredatorClockSandbox.entitlements */,
+			);
+			name = "Support Files";
+			sourceTree = "<group>";
+		};
+		35C1533A22821CE2005B24A9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				35C1530B22820A34005B24A9 /* Info.plist */,
+			);
+			name = "Support Files";
+			sourceTree = "<group>";
+		};
+		35C1533B22821CF3005B24A9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				35C1532F22821C94005B24A9 /* Info.plist */,
+			);
+			name = "Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		35C152FF22820A34005B24A9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35C1532722821C94005B24A9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35C1533022821C94005B24A9 /* PredatorClockCore.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		35C1530322820A34005B24A9 /* PredatorClock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35C1530E22820A34005B24A9 /* Build configuration list for PBXNativeTarget "PredatorClock" */;
+			buildPhases = (
+				35C152FF22820A34005B24A9 /* Headers */,
+				35C1530022820A34005B24A9 /* Sources */,
+				35C1530122820A34005B24A9 /* Frameworks */,
+				35C1530222820A34005B24A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PredatorClock;
+			productName = PredatorClock;
+			productReference = 35C1530422820A34005B24A9 /* PredatorClock.saver */;
+			productType = "com.apple.product-type.bundle";
+		};
+		35C15316228219EB005B24A9 /* PredatorClockSandbox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35C15322228219ED005B24A9 /* Build configuration list for PBXNativeTarget "PredatorClockSandbox" */;
+			buildPhases = (
+				35C15313228219EB005B24A9 /* Sources */,
+				35C15314228219EB005B24A9 /* Frameworks */,
+				35C15315228219EB005B24A9 /* Resources */,
+				35C1533822821C94005B24A9 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				35C1533222821C94005B24A9 /* PBXTargetDependency */,
+			);
+			name = PredatorClockSandbox;
+			productName = PredatorClockSandbox;
+			productReference = 35C15317228219EB005B24A9 /* PredatorClock.app */;
+			productType = "com.apple.product-type.application";
+		};
+		35C1532B22821C94005B24A9 /* PredatorClockCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35C1533522821C94005B24A9 /* Build configuration list for PBXNativeTarget "PredatorClockCore" */;
+			buildPhases = (
+				35C1532722821C94005B24A9 /* Headers */,
+				35C1532822821C94005B24A9 /* Sources */,
+				35C1532922821C94005B24A9 /* Frameworks */,
+				35C1532A22821C94005B24A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PredatorClockCore;
+			productName = PredatorClockCore;
+			productReference = 35C1532C22821C94005B24A9 /* PredatorClockCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		35C152FB22820A34005B24A9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Victor Peschenkov";
+				TargetAttributes = {
+					35C1530322820A34005B24A9 = {
+						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
+					};
+					35C15316228219EB005B24A9 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					35C1532B22821C94005B24A9 = {
+						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
+					};
+				};
+			};
+			buildConfigurationList = 35C152FE22820A34005B24A9 /* Build configuration list for PBXProject "PredatorClock" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 35C152FA22820A34005B24A9;
+			productRefGroup = 35C1530522820A34005B24A9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				35C1530322820A34005B24A9 /* PredatorClock */,
+				35C15316228219EB005B24A9 /* PredatorClockSandbox */,
+				35C1532B22821C94005B24A9 /* PredatorClockCore */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		35C1530222820A34005B24A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35C15315228219EB005B24A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35C1531C228219ED005B24A9 /* Assets.xcassets in Resources */,
+				35C1531F228219ED005B24A9 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35C1532A22821C94005B24A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		35C1530022820A34005B24A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35810FC22284B7BC005852DE /* CoordinateSystem.swift in Sources */,
+				35C1531222820ADF005B24A9 /* PredatorClockView.swift in Sources */,
+				35810FC42284B7C2005852DE /* PredatorClockScreenSaver.swift in Sources */,
+				35810FC32284B7BF005852DE /* PredatorSpaceSystem.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35C15313228219EB005B24A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35C1532622821B2F005B24A9 /* PredatorClockView.swift in Sources */,
+				35C1531A228219EB005B24A9 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35C1532822821C94005B24A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				356E4FB422835C63002FF647 /* PredatorClockScreenSaver.swift in Sources */,
+				356E4FB222835140002FF647 /* PredatorSpaceSystem.swift in Sources */,
+				356E4FB022835050002FF647 /* CoordinateSystem.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		35C1533222821C94005B24A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 35C1532B22821C94005B24A9 /* PredatorClockCore */;
+			targetProxy = 35C1533122821C94005B24A9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		35C1531D228219ED005B24A9 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				35C1531E228219ED005B24A9 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		35C1530C22820A34005B24A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		35C1530D22820A34005B24A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		35C1530F22820A34005B24A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6HP739XXXJ;
+				INFOPLIST_FILE = PredatorClock/Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = org.vpeschenkov.PredatorClock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				WRAPPER_EXTENSION = saver;
+			};
+			name = Debug;
+		};
+		35C1531022820A34005B24A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6HP739XXXJ;
+				INFOPLIST_FILE = PredatorClock/Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = org.vpeschenkov.PredatorClock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				WRAPPER_EXTENSION = saver;
+			};
+			name = Release;
+		};
+		35C15323228219ED005B24A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PredatorClockSandbox/PredatorClockSandbox.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6HP739XXXJ;
+				INFOPLIST_FILE = PredatorClockSandbox/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = org.vpeschenkov.PredatorClockSandbox;
+				PRODUCT_NAME = PredatorClock;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		35C15324228219ED005B24A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PredatorClockSandbox/PredatorClockSandbox.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6HP739XXXJ;
+				INFOPLIST_FILE = PredatorClockSandbox/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = org.vpeschenkov.PredatorClockSandbox;
+				PRODUCT_NAME = PredatorClock;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		35C1533622821C94005B24A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6HP739XXXJ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = PredatorClockCore/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = org.vpeschenkov.PredatorClockCore;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		35C1533722821C94005B24A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6HP739XXXJ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = PredatorClockCore/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = org.vpeschenkov.PredatorClockCore;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		35C152FE22820A34005B24A9 /* Build configuration list for PBXProject "PredatorClock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35C1530C22820A34005B24A9 /* Debug */,
+				35C1530D22820A34005B24A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		35C1530E22820A34005B24A9 /* Build configuration list for PBXNativeTarget "PredatorClock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35C1530F22820A34005B24A9 /* Debug */,
+				35C1531022820A34005B24A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		35C15322228219ED005B24A9 /* Build configuration list for PBXNativeTarget "PredatorClockSandbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35C15323228219ED005B24A9 /* Debug */,
+				35C15324228219ED005B24A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		35C1533522821C94005B24A9 /* Build configuration list for PBXNativeTarget "PredatorClockCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35C1533622821C94005B24A9 /* Debug */,
+				35C1533722821C94005B24A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 35C152FB22820A34005B24A9 /* Project object */;
+}
