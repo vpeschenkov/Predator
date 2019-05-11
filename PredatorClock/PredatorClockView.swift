@@ -41,7 +41,7 @@ final class PredatorClockView: ScreenSaverView {
         timer = Timer.scheduledTimer(
             timeInterval: animationTimeInterval,
             target: self,
-            selector: #selector(enimationLoopEventHandler),
+            selector: #selector(animationLoopEventHandler),
             userInfo: nil,
             repeats: true
         )
@@ -61,9 +61,9 @@ final class PredatorClockView: ScreenSaverView {
         return preferences.window
     }
     
-    //MARK: - Time
+    //MARK: - Timer
     
-    @objc func enimationLoopEventHandler() {
+    @objc func animationLoopEventHandler() {
         self.setNeedsDisplay(self.bounds)
     }
 }

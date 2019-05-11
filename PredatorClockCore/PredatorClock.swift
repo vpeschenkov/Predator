@@ -73,8 +73,6 @@ final public class PredatorClock {
         let p8 = CGPoint(x: p1.x + shape.width * 0.313, y: p7.y - shape.height)
         let p9 = CGPoint(x: p1.x + shape.width * 0.268, y: p6.y - shape.width * 0.713)
         // Drawing
-//        context.setStrokeColor(CGColor(red: 0.0, green: 1.0, blue: 0.0, alpha: 1.0))
-//        context.stroke(rect)
         draw(p1, 90, (value >= 1))
         draw(p2, 0, (value >= 1))
         draw(p3, 0, (value >= 1))
@@ -181,14 +179,18 @@ final public class PredatorClock {
     // MARK:- Drawing
     
     func drawPredatorLine(in context: CGContext, point: CGPoint, shape: CGSize, angle: CGFloat, enabled: Bool) {
+        guard var color = Preferences.shared.shapesColor?.cgColor else {
+            return
+        }
+        let isReverseFiling = Preferences.shared.reverseFilling ?? false
+        let isEnabled = isReverseFiling == true ? !enabled : enabled
         context.saveGState()
-        var color = CGColor(red: 1.0, green: 0.0, blue: 0.0, alpha: 1.0)
-        if !enabled {
-            color = CGColor(red: 1.0, green: 0.0, blue: 0.0, alpha: 0.3)
+        if !isEnabled  {
+            color = color.copy(alpha: 0.3) ?? color
         }
         context.rotate(point, angle: angle)
         context.setFillColor(color)
-        context.setStrokeColor(CGColor(red: 1.0, green: 0.0, blue: 0.0, alpha: 1.0))
+        context.setStrokeColor(color.copy(alpha: 1.0) ?? color)
         context.setShadow(offset: .zero, blur: 10.0, color: color)
         context.addPath(self.buildPredatorShapePath(in: CGRect(
             x: point.x,
@@ -198,7 +200,7 @@ final public class PredatorClock {
         )))
         context.closePath()
         context.fillPath()
-        if !enabled {
+        if !isEnabled {
             context.addPath(self.buildPredatorShapePath(in: CGRect(
                 x: point.x,
                 y: point.y,

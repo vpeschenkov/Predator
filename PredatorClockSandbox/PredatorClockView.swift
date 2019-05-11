@@ -10,14 +10,24 @@ import Cocoa
 import PredatorClockCore
 
 class PredatorClockView: NSView {
+    private var timer: Timer?
     private let predator = PredatorClock()
     
     required init?(coder decoder: NSCoder) {
         super.init(coder: decoder)
         
-        Timer.scheduledTimer(withTimeInterval: 0.016, repeats: true) { t in
-            self.display()
-        }
+        timer = Timer.scheduledTimer(
+            timeInterval: 0.16,
+            target: self,
+            selector: #selector(animationLoopEventHandler),
+            userInfo: nil,
+            repeats: true
+        )
+    }
+    
+    deinit {
+        timer?.invalidate()
+        timer = nil
     }
     
     override func draw(_ dirtyRect: NSRect) {
@@ -28,5 +38,11 @@ class PredatorClockView: NSView {
             context.fill(dirtyRect)
             predator.draw(in: dirtyRect, context: context)
         }
+    }
+    
+    //MARK: - Timer
+    
+    @objc func animationLoopEventHandler() {
+        self.setNeedsDisplay(self.bounds)
     }
 }

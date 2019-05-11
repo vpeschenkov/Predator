@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		356E4FB422835C63002FF647 /* PredatorClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356E4FB322835C63002FF647 /* PredatorClock.swift */; };
 		35810FC42284B7C2005852DE /* PredatorClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356E4FB322835C63002FF647 /* PredatorClock.swift */; };
+		35854B5C228746BC00356369 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35854B5B228746BC00356369 /* Preferences.swift */; };
+		35854B5D2287488D00356369 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35854B5B228746BC00356369 /* Preferences.swift */; };
+		35854B5F2287512300356369 /* PredatorClockPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35854B5E2287512300356369 /* PredatorClockPreviewView.swift */; };
 		35AEE2FD22870F8900116D30 /* PreferencesWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AEE2FC22870F8900116D30 /* PreferencesWindowController.swift */; };
 		35AEE2FF22870FA800116D30 /* PreferencesWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35AEE2FE22870FA800116D30 /* PreferencesWindowController.xib */; };
 		35AEE301228718E900116D30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35AEE300228718E900116D30 /* Assets.xcassets */; };
@@ -48,6 +51,8 @@
 
 /* Begin PBXFileReference section */
 		356E4FB322835C63002FF647 /* PredatorClock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredatorClock.swift; sourceTree = "<group>"; };
+		35854B5B228746BC00356369 /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
+		35854B5E2287512300356369 /* PredatorClockPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredatorClockPreviewView.swift; sourceTree = "<group>"; };
 		35AEE2FC22870F8900116D30 /* PreferencesWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesWindowController.swift; sourceTree = "<group>"; };
 		35AEE2FE22870FA800116D30 /* PreferencesWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PreferencesWindowController.xib; sourceTree = "<group>"; };
 		35AEE300228718E900116D30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -102,6 +107,7 @@
 		35AEE2FB22870F7A00116D30 /* Preferences */ = {
 			isa = PBXGroup;
 			children = (
+				35854B5B228746BC00356369 /* Preferences.swift */,
 				35AEE2FC22870F8900116D30 /* PreferencesWindowController.swift */,
 				35AEE2FE22870FA800116D30 /* PreferencesWindowController.xib */,
 			);
@@ -134,6 +140,7 @@
 			children = (
 				35AEE2FB22870F7A00116D30 /* Preferences */,
 				35C1531122820ADF005B24A9 /* PredatorClockView.swift */,
+				35854B5E2287512300356369 /* PredatorClockPreviewView.swift */,
 				35C1533A22821CE2005B24A9 /* Support Files */,
 			);
 			path = PredatorClock;
@@ -341,6 +348,8 @@
 			files = (
 				35AEE2FD22870F8900116D30 /* PreferencesWindowController.swift in Sources */,
 				35C1531222820ADF005B24A9 /* PredatorClockView.swift in Sources */,
+				35854B5C228746BC00356369 /* Preferences.swift in Sources */,
+				35854B5F2287512300356369 /* PredatorClockPreviewView.swift in Sources */,
 				35810FC42284B7C2005852DE /* PredatorClock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -358,6 +367,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35854B5D2287488D00356369 /* Preferences.swift in Sources */,
 				356E4FB422835C63002FF647 /* PredatorClock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
