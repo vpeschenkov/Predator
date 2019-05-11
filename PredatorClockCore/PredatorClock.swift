@@ -179,7 +179,7 @@ final public class PredatorClock {
     // MARK:- Drawing
     
     func drawPredatorLine(in context: CGContext, point: CGPoint, shape: CGSize, angle: CGFloat, enabled: Bool) {
-        guard var color = Preferences.shared.shapesColor?.cgColor else {
+        guard var color = Preferences.shared.primaryColor?.cgColor else {
             return
         }
         let isReverseFiling = Preferences.shared.reverseFilling ?? false

@@ -26,7 +26,7 @@
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 <subviews>
                     <colorWell translatesAutoresizingMaskIntoConstraints="NO" id="PFI-UJ-nv7">
-                        <rect key="frame" x="69" y="186" width="44" height="20"/>
+                        <rect key="frame" x="117" y="186" width="44" height="20"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="20" id="7ko-Uq-JXd"/>
                             <constraint firstAttribute="width" constant="44" id="qf0-Wf-dUc"/>
@@ -77,11 +77,11 @@
                         </connections>
                     </button>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="udT-lF-zKm">
-                        <rect key="frame" x="14" y="186" width="41" height="20"/>
+                        <rect key="frame" x="14" y="186" width="89" height="20"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="20" id="mVJ-P2-jtj"/>
                         </constraints>
-                        <textFieldCell key="cell" lineBreakMode="clipping" title="Color:" id="9CI-hk-4rQ">
+                        <textFieldCell key="cell" lineBreakMode="clipping" title="Primary color:" id="9CI-hk-4rQ">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>

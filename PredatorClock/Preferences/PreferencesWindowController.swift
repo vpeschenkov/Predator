@@ -14,6 +14,11 @@ final class PreferencesWindowController: NSWindowController {
     @IBOutlet var reverseButton: NSButton!
     @IBOutlet var previewView: NSView!
     
+    private lazy var preferences = Preferences.shared
+    
+    private static let github = "https://github.com/vpeschenkov/predator-clock-screensaver"
+    private static let twitter = "https://twitter.com/vpeschenkov"
+    
     override func windowDidLoad() {
         super.windowDidLoad()
 
@@ -23,7 +28,7 @@ final class PreferencesWindowController: NSWindowController {
             reverseButton.state = .off
         }
         
-        if let color = Preferences.shared.shapesColor {
+        if let color = Preferences.shared.primaryColor {
             colorPicker.color = color
         }
     }
@@ -34,30 +39,31 @@ final class PreferencesWindowController: NSWindowController {
 extension PreferencesWindowController {
     
     @IBAction func reverseAction(_ sender: NSButton) {
-        Preferences.shared.reverseFilling = sender.state == .on ? true : false
+        preferences.reverseFilling = sender.state == .on ? true : false
         previewView.setNeedsDisplay(previewView.bounds)
     }
     
     @IBAction func pickColorAction(_ sender: Any) {
-        Preferences.shared.shapesColor = colorPicker.color
+        preferences.primaryColor = colorPicker.color
         previewView.setNeedsDisplay(previewView.bounds)
     }
     
     @IBAction func githubAction(_ sender: Any) {
-        guard let url = URL(string: "https://github.com/vpeschenkov/predator-clock-screensaver") else {
+        guard let url = URL(string: PreferencesWindowController.github) else {
             return
         }
         NSWorkspace.shared.open(url)
     }
     
     @IBAction func twitterAction(_ sender: Any) {
-        guard let url = URL(string: "https://twitter.com/vpeschenkov") else {
+        guard let url = URL(string: PreferencesWindowController.twitter) else {
             return
         }
         NSWorkspace.shared.open(url)
     }
     
     @IBAction func doneAction(_ sender: Any) {
+        NSColorPanel.shared.close()
         guard let window = window else {
             return
         }

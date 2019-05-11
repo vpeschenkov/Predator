@@ -12,18 +12,18 @@ final class Preferences {
     
     static let shared = Preferences()
     
-    public var shapesColor: NSColor? {
+    public var primaryColor: NSColor? {
         set {
             if let value = newValue {
-                Preferences.standard.set(NSKeyedArchiver.archivedData(withRootObject: value), forKey: Key.shapesColor)
+                Preferences.standard.set(NSKeyedArchiver.archivedData(withRootObject: value), forKey: Key.primaryColor)
             } else {
-                Preferences.standard.set(nil, forKey: Key.shapesColor)
+                Preferences.standard.set(nil, forKey: Key.primaryColor)
             }
             Preferences.standard.synchronize()
         }
         
         get {
-            if let value = Preferences.standard.object(forKey: Key.shapesColor) as? Data {
+            if let value = Preferences.standard.object(forKey: Key.primaryColor) as? Data {
                 return NSKeyedUnarchiver.unarchiveObject(with: value) as? NSColor
             }
             return nil
@@ -43,7 +43,7 @@ final class Preferences {
     
     // MARK: Key
     private enum Key {
-        static let shapesColor = "shapes-color-key"
+        static let primaryColor = "primory-color-key"
         static let reverseFilling = "reverse-filling-key"
     }
     
@@ -52,7 +52,7 @@ final class Preferences {
             fatalError("Failed to retrieve settings")
         }
         defaults.register(defaults: [
-            Key.shapesColor: NSKeyedArchiver.archivedData(withRootObject: NSColor.red),
+            Key.primaryColor: NSKeyedArchiver.archivedData(withRootObject: NSColor.red),
             Key.reverseFilling: false
             ])
         return defaults
