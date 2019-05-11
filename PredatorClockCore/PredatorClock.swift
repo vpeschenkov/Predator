@@ -11,7 +11,7 @@ import QuartzCore
 
 // MARK:- Predator Clock Screen Saver
 
-open class PredatorClock {
+final public class PredatorClock {
     
     public init() {
         
@@ -20,8 +20,8 @@ open class PredatorClock {
     public func draw(in rect: CGRect, context: CGContext) {
         let date = Date()
         let calendar = Calendar.current
-        let hours = calendar.component(.second, from: date)
-        let minutes = calendar.component(.second, from: date)
+        let hours = calendar.component(.hour, from: date)
+        let minutes = calendar.component(.minute, from: date)
         let width = min(rect.size.width, rect.size.height) * 0.25
         let height = width * 1.5
         let center = CGPoint(x: rect.width / 2.0, y: rect.height / 2.0)

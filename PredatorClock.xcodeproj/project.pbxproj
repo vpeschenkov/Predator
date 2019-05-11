@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		356E4FB422835C63002FF647 /* PredatorClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356E4FB322835C63002FF647 /* PredatorClock.swift */; };
 		35810FC42284B7C2005852DE /* PredatorClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356E4FB322835C63002FF647 /* PredatorClock.swift */; };
+		35AEE2FD22870F8900116D30 /* PreferencesWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AEE2FC22870F8900116D30 /* PreferencesWindowController.swift */; };
+		35AEE2FF22870FA800116D30 /* PreferencesWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35AEE2FE22870FA800116D30 /* PreferencesWindowController.xib */; };
+		35AEE301228718E900116D30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35AEE300228718E900116D30 /* Assets.xcassets */; };
 		35C1531222820ADF005B24A9 /* PredatorClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C1531122820ADF005B24A9 /* PredatorClockView.swift */; };
 		35C1531A228219EB005B24A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C15319228219EB005B24A9 /* AppDelegate.swift */; };
 		35C1531C228219ED005B24A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35C1531B228219ED005B24A9 /* Assets.xcassets */; };
@@ -45,6 +48,9 @@
 
 /* Begin PBXFileReference section */
 		356E4FB322835C63002FF647 /* PredatorClock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredatorClock.swift; sourceTree = "<group>"; };
+		35AEE2FC22870F8900116D30 /* PreferencesWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesWindowController.swift; sourceTree = "<group>"; };
+		35AEE2FE22870FA800116D30 /* PreferencesWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PreferencesWindowController.xib; sourceTree = "<group>"; };
+		35AEE300228718E900116D30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		35C1530422820A34005B24A9 /* PredatorClock.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PredatorClock.saver; sourceTree = BUILT_PRODUCTS_DIR; };
 		35C1530B22820A34005B24A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		35C1531122820ADF005B24A9 /* PredatorClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredatorClockView.swift; sourceTree = "<group>"; };
@@ -93,6 +99,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		35AEE2FB22870F7A00116D30 /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				35AEE2FC22870F8900116D30 /* PreferencesWindowController.swift */,
+				35AEE2FE22870FA800116D30 /* PreferencesWindowController.xib */,
+			);
+			path = Preferences;
+			sourceTree = "<group>";
+		};
 		35C152FA22820A34005B24A9 = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +132,7 @@
 		35C1530622820A34005B24A9 /* PredatorClock */ = {
 			isa = PBXGroup;
 			children = (
+				35AEE2FB22870F7A00116D30 /* Preferences */,
 				35C1531122820ADF005B24A9 /* PredatorClockView.swift */,
 				35C1533A22821CE2005B24A9 /* Support Files */,
 			);
@@ -157,6 +173,7 @@
 		35C1533A22821CE2005B24A9 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
+				35AEE300228718E900116D30 /* Assets.xcassets */,
 				35C1530B22820A34005B24A9 /* Info.plist */,
 			);
 			name = "Support Files";
@@ -294,6 +311,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35AEE301228718E900116D30 /* Assets.xcassets in Resources */,
+				35AEE2FF22870FA800116D30 /* PreferencesWindowController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +339,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35AEE2FD22870F8900116D30 /* PreferencesWindowController.swift in Sources */,
 				35C1531222820ADF005B24A9 /* PredatorClockView.swift in Sources */,
 				35810FC42284B7C2005852DE /* PredatorClock.swift in Sources */,
 			);
@@ -490,7 +510,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = org.vpeschenkov.PredatorClock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -514,7 +534,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = org.vpeschenkov.PredatorClock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -536,7 +556,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = org.vpeschenkov.PredatorClockSandbox;
 				PRODUCT_NAME = PredatorClock;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -559,7 +579,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = org.vpeschenkov.PredatorClockSandbox;
 				PRODUCT_NAME = PredatorClock;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -590,7 +610,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = org.vpeschenkov.PredatorClockCore;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -624,7 +644,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = org.vpeschenkov.PredatorClockCore;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;

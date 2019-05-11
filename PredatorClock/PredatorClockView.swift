@@ -8,28 +8,25 @@
 
 import ScreenSaver
 
-class PredatorClockView: ScreenSaverView {
+final class PredatorClockView: ScreenSaverView {
     private var timer: Timer?
-    private let predator = PredatorClock()
+    private lazy var predator = PredatorClock()
+    private lazy var preferences = PreferencesWindowController(windowNibName: "PreferencesWindowController")
     
     override init?(frame: NSRect, isPreview: Bool) {
         super.init(frame: frame, isPreview: isPreview)
-        animationTimeInterval = 1 / 30
+        animationTimeInterval = 1.0
         startAnimation()
     }
     
     required init?(coder decoder: NSCoder) {
         super.init(coder: decoder)
-        animationTimeInterval = 1 / 30
+        animationTimeInterval = 1.0
         startAnimation()
     }
     
     override var isAnimating: Bool {
         return true
-    }
-    
-    override var hasConfigureSheet: Bool {
-        return false
     }
     
     override func draw(_ rect: NSRect) {
@@ -41,9 +38,13 @@ class PredatorClockView: ScreenSaverView {
     
     override func startAnimation() {
         super.startAnimation()
-        timer = Timer.scheduledTimer(withTimeInterval: animationTimeInterval, repeats: true) { t in
-            self.setNeedsDisplay(self.bounds)
-        }
+        timer = Timer.scheduledTimer(
+            timeInterval: animationTimeInterval,
+            target: self,
+            selector: #selector(enimationLoopEventHandler),
+            userInfo: nil,
+            repeats: true
+        )
     }
     
     override func stopAnimation() {
@@ -52,7 +53,17 @@ class PredatorClockView: ScreenSaverView {
         timer = nil
     }
     
+    override var hasConfigureSheet: Bool {
+        return true
+    }
+    
     override var configureSheet: NSWindow? {
-        return nil
+        return preferences.window
+    }
+    
+    //MARK: - Time
+    
+    @objc func enimationLoopEventHandler() {
+        self.setNeedsDisplay(self.bounds)
     }
 }
