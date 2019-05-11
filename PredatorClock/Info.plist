@@ -21,6 +21,6 @@
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2019 Victor Peschenkov. All rights reserved.</string>
 	<key>NSPrincipalClass</key>
-	<string>PredatorClockView</string>
+	<string>PredatorClock.PredatorClockView</string>
 </dict>
 </plist>
