@@ -9,15 +9,11 @@
 import Cocoa
 
 final class PreferencesWindowController: NSWindowController {
-    
     @IBOutlet var colorPicker: NSColorWell!
     @IBOutlet var reverseButton: NSButton!
     @IBOutlet var previewView: NSView!
     
     private lazy var preferences = Preferences.shared
-    
-    private static let github = "https://github.com/vpeschenkov/predator-clock-screensaver"
-    private static let twitter = "https://twitter.com/vpeschenkov"
     
     override func windowDidLoad() {
         super.windowDidLoad()
@@ -49,14 +45,14 @@ extension PreferencesWindowController {
     }
     
     @IBAction func githubAction(_ sender: Any) {
-        guard let url = URL(string: PreferencesWindowController.github) else {
+        guard let url = URL(string: Preferences.github) else {
             return
         }
         NSWorkspace.shared.open(url)
     }
     
     @IBAction func twitterAction(_ sender: Any) {
-        guard let url = URL(string: PreferencesWindowController.twitter) else {
+        guard let url = URL(string: Preferences.twitter) else {
             return
         }
         NSWorkspace.shared.open(url)

@@ -9,24 +9,18 @@
 import ScreenSaver
 
 final class PredatorClockView: ScreenSaverView {
-    private var timer: Timer?
-    private lazy var predator = PredatorClock()
-    private lazy var preferences = PreferencesWindowController(windowNibName: "PreferencesWindowController")
+    fileprivate var timer: Timer?
+    fileprivate lazy var predator = PredatorClock()
+    fileprivate lazy var preferences = PreferencesWindowController(windowNibName: Preferences.preferencesIdentifier)
     
     override init?(frame: NSRect, isPreview: Bool) {
         super.init(frame: frame, isPreview: isPreview)
-        animationTimeInterval = 1.0
-        startAnimation()
+        configure()
     }
     
     required init?(coder decoder: NSCoder) {
         super.init(coder: decoder)
-        animationTimeInterval = 1.0
-        startAnimation()
-    }
-    
-    override var isAnimating: Bool {
-        return true
+        configure()
     }
     
     override func draw(_ rect: NSRect) {
@@ -34,6 +28,33 @@ final class PredatorClockView: ScreenSaverView {
         if let context = NSGraphicsContext.current?.cgContext {
             predator.draw(in: self.visibleRect, context: context)
         }
+    }
+    
+    // MARK: - Pirivate Methods
+    
+    private func configure() {
+        animationTimeInterval = Preferences.animationTimeInterval
+        startAnimation()
+    }
+}
+
+// MARK: - Configure Sheet
+
+extension PredatorClockView {
+    override var hasConfigureSheet: Bool {
+        return true
+    }
+    
+    override var configureSheet: NSWindow? {
+        return preferences.window
+    }
+}
+
+// MARK: - Animation
+
+extension PredatorClockView {
+    override var isAnimating: Bool {
+        return true
     }
     
     override func startAnimation() {
@@ -52,17 +73,11 @@ final class PredatorClockView: ScreenSaverView {
         timer?.invalidate()
         timer = nil
     }
-    
-    override var hasConfigureSheet: Bool {
-        return true
-    }
-    
-    override var configureSheet: NSWindow? {
-        return preferences.window
-    }
-    
-    //MARK: - Timer
-    
+}
+
+// MARK: - Timer
+
+extension PredatorClockView {
     @objc func animationLoopEventHandler() {
         self.setNeedsDisplay(self.bounds)
     }

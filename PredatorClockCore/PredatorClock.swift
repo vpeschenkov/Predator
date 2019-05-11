@@ -9,7 +9,7 @@
 import Cocoa
 import QuartzCore
 
-// MARK:- Predator Clock Screen Saver
+// MARK: - Predator Clock Screen Saver
 
 final public class PredatorClock {
     
@@ -52,7 +52,7 @@ final public class PredatorClock {
         ), context: context, value: Int(minutes % 10))
     }
     
-    // MARK:- Hours
+    // MARK: - Hours
     
     func drawPredatorHourHight(in rect: CGRect, context: CGContext, value: Int) {
         let width = rect.size.width * 0.384
@@ -114,7 +114,7 @@ final public class PredatorClock {
         draw(p9, 45, (value >= 8))
     }
     
-    // MARK:- Minutes
+    // MARK: - Minutes
     
     func drawPredatorMinuteHight(in rect: CGRect, context: CGContext, value: Int) {
         let width = rect.size.width * 0.384
@@ -176,7 +176,7 @@ final public class PredatorClock {
         draw(p9, 45, (value >= 8))
     }
     
-    // MARK:- Drawing
+    // MARK: - Drawing
     
     func drawPredatorLine(in context: CGContext, point: CGPoint, shape: CGSize, angle: CGFloat, enabled: Bool) {
         guard var color = Preferences.shared.primaryColor?.cgColor else {
@@ -213,7 +213,7 @@ final public class PredatorClock {
         context.restoreGState()
     }
     
-    // MARK:- Number Paths
+    // MARK: - Number Paths
     
     func buildPredatorShapePath(in rect: CGRect) -> CGPath {
         let path = CGMutablePath()
@@ -249,7 +249,7 @@ final public class PredatorClock {
     }
 }
 
-// MARK:- CGContext Extension
+// MARK: - CGContext Extension
 
 extension CGContext {
     

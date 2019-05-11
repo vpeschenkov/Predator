@@ -11,19 +11,23 @@ import ScreenSaver
 final class Preferences {
     
     static let shared = Preferences()
+    static let animationTimeInterval = TimeInterval(1.0)
+    static let preferencesIdentifier = "PreferencesWindowController"
+    static let github = "https://github.com/vpeschenkov/predator-clock-screensaver"
+    static let twitter = "https://twitter.com/vpeschenkov"
     
     public var primaryColor: NSColor? {
         set {
             if let value = newValue {
-                Preferences.standard.set(NSKeyedArchiver.archivedData(withRootObject: value), forKey: Key.primaryColor)
+                defaults.set(NSKeyedArchiver.archivedData(withRootObject: value), forKey: Key.primaryColor)
             } else {
-                Preferences.standard.set(nil, forKey: Key.primaryColor)
+                defaults.set(nil, forKey: Key.primaryColor)
             }
-            Preferences.standard.synchronize()
+            defaults.synchronize()
         }
         
         get {
-            if let value = Preferences.standard.object(forKey: Key.primaryColor) as? Data {
+            if let value = defaults.object(forKey: Key.primaryColor) as? Data {
                 return NSKeyedUnarchiver.unarchiveObject(with: value) as? NSColor
             }
             return nil
@@ -32,22 +36,23 @@ final class Preferences {
     
     public var reverseFilling: Bool? {
         set {
-            Preferences.standard.set(newValue, forKey: Key.reverseFilling)
-            Preferences.standard.synchronize()
+            defaults.set(newValue, forKey: Key.reverseFilling)
+            defaults.synchronize()
         }
         
         get {
-            return Preferences.standard.object(forKey: Key.reverseFilling) as? Bool
+            return defaults.object(forKey: Key.reverseFilling) as? Bool
         }
     }
     
-    // MARK: Key
+    // MARK: - Key
+    
     private enum Key {
         static let primaryColor = "primory-color-key"
         static let reverseFilling = "reverse-filling-key"
     }
     
-    static fileprivate var standard: ScreenSaverDefaults {
+    fileprivate lazy var defaults: ScreenSaverDefaults = {
         guard let bundleIdentifier = Bundle(for: Preferences.self).bundleIdentifier, let defaults = ScreenSaverDefaults(forModuleWithName: bundleIdentifier) else {
             fatalError("Failed to retrieve settings")
         }
@@ -56,5 +61,5 @@ final class Preferences {
             Key.reverseFilling: false
             ])
         return defaults
-    }
+    }()
 }

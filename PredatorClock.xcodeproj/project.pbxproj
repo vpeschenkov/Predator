@@ -521,7 +521,7 @@
 					"@loader_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = org.vpeschenkov.PredatorClock;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vpeschenkov.predator-clock";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -545,7 +545,7 @@
 					"@loader_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = org.vpeschenkov.PredatorClock;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vpeschenkov.predator-clock";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = saver;
@@ -567,7 +567,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = org.vpeschenkov.PredatorClockSandbox;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vpeschenkov.predator-clock-sandbox";
 				PRODUCT_NAME = PredatorClock;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -590,7 +590,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = org.vpeschenkov.PredatorClockSandbox;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vpeschenkov.predator-clock-sandbox";
 				PRODUCT_NAME = PredatorClock;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -621,7 +621,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = org.vpeschenkov.PredatorClockCore;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vpeschenkov.predator-clock-core";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -655,7 +655,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = org.vpeschenkov.PredatorClockCore;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vpeschenkov.predator-clock-core";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
