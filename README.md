@@ -1,6 +1,6 @@
-# Predator's Clock Screensaver
-
 ![Predator's screensaver](Screenshots/main.png)
+
+# Predator's Clock Screensaver
 
 # Installation
 
