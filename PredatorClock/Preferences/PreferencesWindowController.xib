@@ -16,7 +16,7 @@
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
-        <window title="Preferences" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" appearanceType="aqua" animationBehavior="default" id="QvC-M9-y7g">
+        <window title="Preferences" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="QvC-M9-y7g">
             <windowStyleMask key="styleMask" titled="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="196" y="240" width="377" height="598"/>
@@ -37,8 +37,8 @@
                         </connections>
                     </colorWell>
                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Vnv-3I-Nmy">
-                        <rect key="frame" x="14" y="162" width="107" height="18"/>
-                        <buttonCell key="cell" type="check" title="Reverse filling" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="8af-fe-00T">
+                        <rect key="frame" x="14" y="154" width="107" height="18"/>
+                        <buttonCell key="cell" type="check" title="Reverse filling" bezelStyle="regularSquare" imagePosition="left" inset="2" id="8af-fe-00T">
                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -52,7 +52,7 @@
                             <constraint firstAttribute="width" constant="250" id="j84-wW-r5I"/>
                             <constraint firstAttribute="height" constant="20" id="w6a-cl-Htl"/>
                         </constraints>
-                        <buttonCell key="cell" type="square" title="Follow the creator on Twitter" bezelStyle="shadowlessSquare" image="Twitter" imagePosition="left" alignment="left" scrollable="YES" lineBreakMode="clipping" imageScaling="proportionallyDown" inset="2" id="Xgd-vn-cgV">
+                        <buttonCell key="cell" type="square" title="Follow me on Twitter" bezelStyle="shadowlessSquare" image="Twitter" imagePosition="left" alignment="left" scrollable="YES" lineBreakMode="clipping" imageScaling="proportionallyDown" inset="2" id="Xgd-vn-cgV">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -120,11 +120,22 @@ DQ
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="wdp-Vx-SFy">
+                        <rect key="frame" x="14" y="124" width="106" height="18"/>
+                        <buttonCell key="cell" type="check" title="12-hour clock" bezelStyle="regularSquare" imagePosition="left" inset="2" id="4uY-7Z-MEs">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="twentyFourClockFormat:" target="-2" id="lR8-Oz-no9"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="QPA-Ty-yka" secondAttribute="trailing" constant="16" id="55a-dX-2BA"/>
+                    <constraint firstItem="wdp-Vx-SFy" firstAttribute="leading" secondItem="Vnv-3I-Nmy" secondAttribute="leading" id="6NC-gM-6cG"/>
                     <constraint firstItem="jmh-nA-HxL" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="16" id="96f-hV-Zll"/>
-                    <constraint firstItem="Vnv-3I-Nmy" firstAttribute="top" secondItem="udT-lF-zKm" secondAttribute="bottom" constant="8" id="CeO-4Q-Q2l"/>
+                    <constraint firstItem="Vnv-3I-Nmy" firstAttribute="top" secondItem="udT-lF-zKm" secondAttribute="bottom" constant="16" id="CeO-4Q-Q2l"/>
                     <constraint firstAttribute="trailing" secondItem="eY6-hS-6X6" secondAttribute="trailing" constant="16" id="Eid-An-tzJ"/>
                     <constraint firstItem="TPH-Cu-qkW" firstAttribute="leading" secondItem="Vnv-3I-Nmy" secondAttribute="trailing" constant="64" id="GIb-Hd-cdO"/>
                     <constraint firstItem="w0R-LT-WzY" firstAttribute="leading" secondItem="AJd-fC-cWE" secondAttribute="leading" id="HyX-6F-E0g"/>
@@ -140,6 +151,7 @@ DQ
                     <constraint firstItem="QPA-Ty-yka" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="16" id="Zxx-Gm-it8"/>
                     <constraint firstAttribute="bottom" secondItem="w0R-LT-WzY" secondAttribute="bottom" constant="16" id="bBK-ug-8ns"/>
                     <constraint firstAttribute="bottom" secondItem="eY6-hS-6X6" secondAttribute="bottom" constant="16" id="e7B-h6-h8i"/>
+                    <constraint firstItem="wdp-Vx-SFy" firstAttribute="top" secondItem="Vnv-3I-Nmy" secondAttribute="bottom" constant="16" id="ekS-Zb-2Yn"/>
                     <constraint firstItem="AJd-fC-cWE" firstAttribute="leading" secondItem="QPA-Ty-yka" secondAttribute="leading" id="gag-IH-JSh"/>
                     <constraint firstItem="PFI-UJ-nv7" firstAttribute="centerY" secondItem="udT-lF-zKm" secondAttribute="centerY" id="iQn-fA-FzB"/>
                     <constraint firstItem="jmh-nA-HxL" firstAttribute="top" secondItem="TPH-Cu-qkW" secondAttribute="bottom" constant="8" id="ii8-rn-9bX"/>

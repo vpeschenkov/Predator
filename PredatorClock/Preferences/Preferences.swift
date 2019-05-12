@@ -45,11 +45,23 @@ final class Preferences {
         }
     }
     
+    public var twentyFourClockFormat: Bool? {
+        set {
+            defaults.set(newValue, forKey: Key.twentyFourClockFormat)
+            defaults.synchronize()
+        }
+        
+        get {
+            return defaults.object(forKey: Key.twentyFourClockFormat) as? Bool
+        }
+    }
+    
     // MARK: - Key
     
     private enum Key {
         static let primaryColor = "primory-color-key"
         static let reverseFilling = "reverse-filling-key"
+        static let twentyFourClockFormat = "twenty-four-clock-format-key"
     }
     
     fileprivate lazy var defaults: ScreenSaverDefaults = {
@@ -58,7 +70,8 @@ final class Preferences {
         }
         defaults.register(defaults: [
             Key.primaryColor: NSKeyedArchiver.archivedData(withRootObject: NSColor.red),
-            Key.reverseFilling: false
+            Key.reverseFilling: false,
+            Key.twentyFourClockFormat: true
             ])
         return defaults
     }()

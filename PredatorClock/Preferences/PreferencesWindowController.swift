@@ -44,6 +44,11 @@ extension PreferencesWindowController {
         previewView.setNeedsDisplay(previewView.bounds)
     }
     
+    @IBAction func twentyFourClockFormat(_ sender: NSButton) {
+        preferences.twentyFourClockFormat = sender.state == .on ? true : false
+        previewView.setNeedsDisplay(previewView.bounds)
+    }
+    
     @IBAction func githubAction(_ sender: Any) {
         guard let url = URL(string: Preferences.github) else {
             return
