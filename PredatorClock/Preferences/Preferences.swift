@@ -16,43 +16,48 @@ final class Preferences {
     static let github = "https://github.com/vpeschenkov/predator-clock-screensaver"
     static let twitter = "https://twitter.com/vpeschenkov"
     
-    public var primaryColor: NSColor? {
+    public var primaryColor: NSColor {
         set {
-            if let value = newValue {
-                defaults.set(NSKeyedArchiver.archivedData(withRootObject: value), forKey: Key.primaryColor)
-            } else {
-                defaults.set(nil, forKey: Key.primaryColor)
-            }
+            defaults.set(NSKeyedArchiver.archivedData(withRootObject: newValue), forKey: Key.primaryColor)
             defaults.synchronize()
         }
         
         get {
-            if let value = defaults.object(forKey: Key.primaryColor) as? Data {
-                return NSKeyedUnarchiver.unarchiveObject(with: value) as? NSColor
-            }
-            return nil
+            return NSKeyedUnarchiver.unarchiveObject(with: defaults.object(forKey: Key.primaryColor) as! Data) as! NSColor
         }
     }
     
-    public var reverseFilling: Bool? {
+    public var reverseFilling: Bool {
         set {
             defaults.set(newValue, forKey: Key.reverseFilling)
             defaults.synchronize()
         }
         
         get {
-            return defaults.object(forKey: Key.reverseFilling) as? Bool
+            return defaults.object(forKey: Key.reverseFilling) as? Bool ?? false
         }
     }
     
-    public var twentyFourClockFormat: Bool? {
+    public var twentyFourClockFormat: Bool {
         set {
             defaults.set(newValue, forKey: Key.twentyFourClockFormat)
             defaults.synchronize()
         }
         
         get {
-            return defaults.object(forKey: Key.twentyFourClockFormat) as? Bool
+            return defaults.object(forKey: Key.twentyFourClockFormat) as? Bool ?? false
+        }
+    }
+    
+    public var isTwentyFourClockFormat: Bool {
+        get {
+            return twentyFourClockFormat
+        }
+    }
+    
+    public var isTwelveFourClockFormat: Bool {
+        get {
+            return twentyFourClockFormat == false
         }
     }
     

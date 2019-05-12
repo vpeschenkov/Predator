@@ -12,21 +12,16 @@ final class PreferencesWindowController: NSWindowController {
     @IBOutlet var colorPicker: NSColorWell!
     @IBOutlet var reverseButton: NSButton!
     @IBOutlet var previewView: NSView!
+    @IBOutlet var twentyHourButton: NSButton!
     
     private lazy var preferences = Preferences.shared
     
     override func windowDidLoad() {
         super.windowDidLoad()
 
-        if let isReverseFiling = Preferences.shared.reverseFilling {
-            reverseButton.state = isReverseFiling ? .on : .off
-        } else {
-            reverseButton.state = .off
-        }
-        
-        if let color = Preferences.shared.primaryColor {
-            colorPicker.color = color
-        }
+        colorPicker.color = preferences.primaryColor
+        reverseButton.state = preferences.reverseFilling ? .on : .off
+        twentyHourButton.state = preferences.twentyFourClockFormat ? .on : .off
     }
 }
 

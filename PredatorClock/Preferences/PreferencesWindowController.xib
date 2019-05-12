@@ -11,6 +11,7 @@
                 <outlet property="colorPicker" destination="PFI-UJ-nv7" id="9cy-56-h37"/>
                 <outlet property="previewView" destination="TPH-Cu-qkW" id="RIv-nX-syw"/>
                 <outlet property="reverseButton" destination="Vnv-3I-Nmy" id="QXm-lU-bTl"/>
+                <outlet property="twentyHourButton" destination="wdp-Vx-SFy" id="9fp-hz-JL2"/>
                 <outlet property="window" destination="QvC-M9-y7g" id="7BP-Vu-9WE"/>
             </connections>
         </customObject>
