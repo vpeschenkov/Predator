@@ -1,35 +1,123 @@
-![Predator's screensaver](Screenshots/main.png)
+![Predator's screensaver](Screenshots/preview.png)
+
+# Predator
+
+**Predator** is a minimalistic screensaver for macOS baed on predator's countdown time. Feel fre to contrubute!
+
 
 ## Compatibility
 
-Requires OS X El Capitan (10.11) or above.
+Requires OS X El Capitan (10.11) or above
+
+## Features
+
+- Homebrew support
+- Reverse shapes filling
+- 12 and 24-hour clock support
+- Doesn't require internet connection
+- Clock color selection
+
+<p align="center">
+  <img src="Screenshots/settings.png">
+</p>
 
 ## Installation
 
-Please close your System Preferences after installing
+Rather install from Terminal or have auto-updates? Look at the Homebrew section below!
 
-### Manual
+### Manual ✋
 
 1. [Click here to Download the latest release]()
-2. Open **PredatorClock.saver** (double click)
-3. `"PredatorClock.saver" can't be opened because it is from an unidentified developer` will appear, press `OK`
+2. Open **Predator.saver** (double click)
+3. `"Predator.saver" can't be opened because it is from an unidentified developer` will appear, press `OK`
 4. Open Preferences
 5. Select Security & Privacy
 6. Select `General`
 7. On the bottom side, select `Open Anyway`
 
-## Uninstallation
+### Homebrew 🍺
+
+1. Open terminal
+2. Enter `brew cask install predator`
+
+## Uninstallation ✋
 
 ### Manual
 
-- Right-click on PredatorClock in System Preferences and select `Delete PredatorClock`, or
+- Right-click on Predator in System Preferences and select `Delete Predator`, or
 - Delete `PredatorClock.saver` either in `/Library/Screen Savers` or `/Users/USERNAME/Library/Screen Savers`.
 
-## Clock rules
+### Homebrew 🍺
 
-### 24-hour clock
+1. Open terminal
+2. Enter `brew cask uninstall predator`
 
-### 12-hour clock
+## How to read the clock or the clock rules
+
+The rules are pretty simple, and you wouldn't spend much time to learn them.
+
+### 24-hour clock rules
+
+#### 1 digits (0-2)
+
+| 0                                                                     | 1                                                                     | 2                                                                      |
+|-----------------------------------------------------------------------|-----------------------------------------------------------------------|------------------------------------------------------------------------|
+| <img src="Screenshots/24-h%20clock/1st%20digit/24h-1-0.png" width=90> | <img src="Screenshots/24-h%20clock/1st%20digit/24h-1-1.png" width=90> | <img src="Screenshots/24-h%20clock/1st%20digit/24h-1-2.png" width=90>  |
+
+#### 3 digits (0-5)
+
+| 0                                                                     | 1                                                                     | 2                                                                     | 3                                                                     | 4                                                                     |
+|-----------------------------------------------------------------------|-----------------------------------------------------------------------|-----------------------------------------------------------------------|-----------------------------------------------------------------------|-----------------------------------------------------------------------|
+| <img src="Screenshots/24-h%20clock/3rd%20digit/24h-3-0.png" width=90> | <img src="Screenshots/24-h%20clock/3rd%20digit/24h-3-1.png" width=90> | <img src="Screenshots/24-h%20clock/3rd%20digit/24h-3-2.png" width=90> | <img src="Screenshots/24-h%20clock/3rd%20digit/24h-3-3.png" width=90> | <img src="Screenshots/24-h%20clock/3rd%20digit/24h-3-4.png" width=90> |
+
+| 5                                                                     |
+|-----------------------------------------------------------------------|
+| <img src="Screenshots/24-h%20clock/3rd%20digit/24h-3-5.png" width=90> |
+
+
+#### 2 & 4 digits (0-9)
+
+| 0                                                                                 | 1                                                                                 | 2                                                                                 | 3                                                                                 | 4                                                                                 |
+|-----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
+| <img src="Screenshots/24-h%20clock/2nd%20&%204th%20digits/24h-24-0.png" width=90> | <img src="Screenshots/24-h%20clock/2nd%20&%204th%20digits/24h-24-1.png" width=90> | <img src="Screenshots/24-h%20clock/2nd%20&%204th%20digits/24h-24-2.png" width=90> | <img src="Screenshots/24-h%20clock/2nd%20&%204th%20digits/24h-24-3.png" width=90> | <img src="Screenshots/24-h%20clock/2nd%20&%204th%20digits/24h-24-4.png" width=90> |
+
+| 5                                                                                 | 6                                                                                 | 7                                                                                 | 8                                                                                 | 9                                                                                 |
+|-----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
+| <img src="Screenshots/24-h%20clock/2nd%20&%204th%20digits/24h-24-5.png" width=90> | <img src="Screenshots/24-h%20clock/2nd%20&%204th%20digits/24h-24-6.png" width=90> | <img src="Screenshots/24-h%20clock/2nd%20&%204th%20digits/24h-24-7.png" width=90> | <img src="Screenshots/24-h%20clock/2nd%20&%204th%20digits/24h-24-8.png" width=90> | <img src="Screenshots/24-h%20clock/2nd%20&%204th%20digits/24h-24-9.png" width=90> |
+
+### 12-hour clock rules
+
+#### 1 digits (0-1)
+
+| 0                                                                     | 1                                                                     |
+|-----------------------------------------------------------------------|-----------------------------------------------------------------------|
+| <img src="Screenshots/12-h%20clock/1st%20digit/12h-1-0.png" width=90> | <img src="Screenshots/12-h%20clock/1st%20digit/12h-1-1.png" width=90> |
+
+#### 3 digits (0-5)
+
+| 0                                                                     | 1                                                                     | 2                                                                     | 3                                                                     | 4                                                                     |
+|-----------------------------------------------------------------------|-----------------------------------------------------------------------|-----------------------------------------------------------------------|-----------------------------------------------------------------------|-----------------------------------------------------------------------|
+| <img src="Screenshots/12-h%20clock/3rd%20digit/12h-3-0.png" width=90> | <img src="Screenshots/12-h%20clock/3rd%20digit/12h-3-1.png" width=90> | <img src="Screenshots/12-h%20clock/3rd%20digit/12h-3-2.png" width=90> | <img src="Screenshots/12-h%20clock/3rd%20digit/12h-3-3.png" width=90> | <img src="Screenshots/12-h%20clock/3rd%20digit/12h-3-4.png" width=90> |
+
+| 5                                                                     |
+|-----------------------------------------------------------------------|
+| <img src="Screenshots/12-h%20clock/3rd%20digit/12h-3-5.png" width=90> |
+
+#### 2 & 4 digits (0-9)
+
+| 0                                                                                 | 1                                                                                 | 2                                                                                 | 3                                                                                 | 4                                                                                 |
+|-----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
+| <img src="Screenshots/12-h%20clock/2nd%20&%204th%20digits/12h-24-0.png" width=90> | <img src="Screenshots/12-h%20clock/2nd%20&%204th%20digits/12h-24-1.png" width=90> | <img src="Screenshots/12-h%20clock/2nd%20&%204th%20digits/12h-24-2.png" width=90> | <img src="Screenshots/12-h%20clock/2nd%20&%204th%20digits/12h-24-3.png" width=90> | <img src="Screenshots/12-h%20clock/2nd%20&%204th%20digits/12h-24-4.png" width=90> |
+
+| 5                                                                                 | 6                                                                                 | 7                                                                                 | 8                                                                                 | 9                                                                                 |
+|-----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
+| <img src="Screenshots/12-h%20clock/2nd%20&%204th%20digits/12h-24-5.png" width=90> | <img src="Screenshots/12-h%20clock/2nd%20&%204th%20digits/12h-24-6.png" width=90> | <img src="Screenshots/12-h%20clock/2nd%20&%204th%20digits/12h-24-7.png" width=90> | <img src="Screenshots/12-h%20clock/2nd%20&%204th%20digits/12h-24-8.png" width=90> | <img src="Screenshots/12-h%20clock/2nd%20&%204th%20digits/12h-24-9.png" width=90> |
+
+#### AM/PM
+
+| AM     | PM     |
+|--------|--------|
+| ![][AM]| ![][PM]|
 
 ## Contributing
 
@@ -44,10 +132,9 @@ Please close your System Preferences after installing
 
 Victor Peschenkov, v.peschenkov@gmail.com
 
-## Support
-
-[![Donate](https://www.paypalobjects.com/en_US/RU/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=NPPY7B6RUBNA8)
-
 ## License
 
 `PredatorClock` is available under the Apache 2.0 license. See the [LICENSE.md](LICENSE.md) file for more info.
+
+[AM]: Screenshots/AM:PM/AM.png
+[PM]: Screenshots/AM:PM/PM.png
