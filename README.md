@@ -7,7 +7,7 @@
 
 ## Compatibility
 
-Requires OS X El Capitan (10.11) or above
+Requires OS X El Capitan 10.11 and newer
 
 ## Features
 
@@ -27,7 +27,7 @@ Rather install from Terminal or have auto-updates? Look at the Homebrew section 
 
 ### Manual ✋
 
-1. [Click here to Download the latest release]()
+1. Click [here](https://github.com/vpeschenkov/predator/releases) to Download the latest release
 2. Open **Predator.saver** (double click)
 3. `"Predator.saver" can't be opened because it is from an unidentified developer` will appear, press `OK`
 4. Open Preferences
