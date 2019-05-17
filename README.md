@@ -23,34 +23,24 @@ Requires OS X El Capitan 10.11 and newer
 
 ## Installation
 
-Rather install from Terminal or have auto-updates? Look at the Homebrew section below!
+### Manual
 
-### Manual ✋
-
-1. Click [here](https://github.com/vpeschenkov/predator/releases) to Download the latest release
+1. Click [here](https://github.com/vpeschenkov/predator/releases) to download the latest release
 2. Open **Predator.saver** (double click)
 3. `"Predator.saver" can't be opened because it is from an unidentified developer` will appear, press `OK`
-4. Open Preferences
-5. Select Security & Privacy
+4. Open `Preferences`
+5. Select `Security & Privacy`
 6. Select `General`
 7. On the bottom side, select `Open Anyway`
 
-### Homebrew 🍺
+**Important**: If you haven't quit System Preferences before installation and were upgrading from a previous version, I strongly recommend you quit the application after installation, then reopen it, as updated Swift screensavers aren't loaded correctly in an active System Preferences session.
 
-1. Open terminal
-2. Enter `brew cask install predator`
-
-## Uninstallation ✋
+## Uninstallation 
 
 ### Manual
 
 - Right-click on Predator in System Preferences and select `Delete Predator`, or
 - Delete `PredatorClock.saver` either in `/Library/Screen Savers` or `/Users/USERNAME/Library/Screen Savers`.
-
-### Homebrew 🍺
-
-1. Open terminal
-2. Enter `brew cask uninstall predator`
 
 ## How to read the clock or the clock rules
 
