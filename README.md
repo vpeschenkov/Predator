@@ -25,7 +25,7 @@ Requires OS X El Capitan 10.11 and newer
 
 ### Manual
 
-1. Click [here](https://github.com/vpeschenkov/predator/releases) to download the latest release
+1. Click [here](https://github.com/vpeschenkov/Predator/releases/download/1.0.0/Predator.saver.zip) to download the latest release
 2. Open **Predator.saver** (double click)
 3. `"Predator.saver" can't be opened because it is from an unidentified developer` will appear, press `OK`
 4. Open `Preferences`
