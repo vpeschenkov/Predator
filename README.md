@@ -11,7 +11,6 @@ Requires OS X El Capitan 10.11 and newer
 
 ## Features
 
-- Homebrew support
 - Reverse shapes filling
 - 12 and 24-hour clock support
 - Doesn't require internet connection
