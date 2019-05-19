@@ -21,9 +21,9 @@
             <windowStyleMask key="styleMask" titled="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="196" y="240" width="500" height="1200"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1057"/>
-            <view key="contentView" wantsLayer="YES" id="EiT-Mj-1SZ">
-                <rect key="frame" x="0.0" y="0.0" width="500" height="322"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+            <view key="contentView" wantsLayer="YES" misplaced="YES" id="EiT-Mj-1SZ">
+                <rect key="frame" x="0.0" y="0.0" width="500" height="1200"/>
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 <subviews>
                     <colorWell translatesAutoresizingMaskIntoConstraints="NO" id="PFI-UJ-nv7">
@@ -166,7 +166,7 @@ DQ
         </window>
     </objects>
     <resources>
-        <image name="GitHub" width="858" height="512"/>
-        <image name="Twitter" width="858" height="512"/>
+        <image name="GitHub" width="429" height="256"/>
+        <image name="Twitter" width="429" height="256"/>
     </resources>
 </document>
