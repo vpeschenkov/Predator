@@ -1,5 +1,7 @@
 ![Predator's screensaver](Screenshots/preview.png)
 
+[![](https://github-basic-badges.herokuapp.com/downloads/vpeschenkov/Predator/total.svg)]()
+
 # Predator
 
 **Predator** is a minimalistic screensaver for macOS baed on predator's countdown time. Feel fre to contrubute!
