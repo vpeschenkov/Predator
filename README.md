@@ -13,10 +13,9 @@ Requires OS X El Capitan 10.11 and newer
 
 ## Features
 
-- Reverse shapes filling
+- Reverse filling
 - 12 and 24-hour clock support
-- Doesn't require internet connection
-- Clock color selection
+- Color selection
 
 <p align="center">
   <img src="Screenshots/settings.png">
