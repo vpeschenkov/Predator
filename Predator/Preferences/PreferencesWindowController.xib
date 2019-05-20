@@ -12,6 +12,7 @@
                 <outlet property="previewView" destination="TPH-Cu-qkW" id="RIv-nX-syw"/>
                 <outlet property="reverseButton" destination="Vnv-3I-Nmy" id="QXm-lU-bTl"/>
                 <outlet property="twentyHourButton" destination="wdp-Vx-SFy" id="9fp-hz-JL2"/>
+                <outlet property="versionLabel" destination="7AB-yP-Tm5" id="G0F-dd-cBg"/>
                 <outlet property="window" destination="QvC-M9-y7g" id="7BP-Vu-9WE"/>
             </connections>
         </customObject>
@@ -21,13 +22,13 @@
             <windowStyleMask key="styleMask" titled="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="196" y="240" width="500" height="1200"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
-            <view key="contentView" wantsLayer="YES" misplaced="YES" id="EiT-Mj-1SZ">
-                <rect key="frame" x="0.0" y="0.0" width="500" height="1200"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1057"/>
+            <view key="contentView" wantsLayer="YES" id="EiT-Mj-1SZ">
+                <rect key="frame" x="0.0" y="0.0" width="500" height="322"/>
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 <subviews>
                     <colorWell translatesAutoresizingMaskIntoConstraints="NO" id="PFI-UJ-nv7">
-                        <rect key="frame" x="105" y="286" width="44" height="20"/>
+                        <rect key="frame" x="109" y="286" width="44" height="20"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="20" id="7ko-Uq-JXd"/>
                             <constraint firstAttribute="width" constant="44" id="qf0-Wf-dUc"/>
@@ -38,8 +39,8 @@
                         </connections>
                     </colorWell>
                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Vnv-3I-Nmy">
-                        <rect key="frame" x="14" y="254" width="107" height="18"/>
-                        <buttonCell key="cell" type="check" title="Reverse filling" bezelStyle="regularSquare" imagePosition="left" inset="2" id="8af-fe-00T">
+                        <rect key="frame" x="14" y="254" width="71" height="18"/>
+                        <buttonCell key="cell" type="check" title="Reverse" bezelStyle="regularSquare" imagePosition="left" inset="2" id="8af-fe-00T">
                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -78,18 +79,18 @@
                         </connections>
                     </button>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="udT-lF-zKm">
-                        <rect key="frame" x="14" y="286" width="77" height="20"/>
+                        <rect key="frame" x="14" y="286" width="91" height="20"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="20" id="mVJ-P2-jtj"/>
                         </constraints>
-                        <textFieldCell key="cell" lineBreakMode="clipping" title="Clock color:" id="9CI-hk-4rQ">
+                        <textFieldCell key="cell" lineBreakMode="clipping" title="Select a color:" id="9CI-hk-4rQ">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="TPH-Cu-qkW" userLabel="Preview" customClass="PredatorPreviewView" customModule="Predator" customModuleProvider="target">
-                        <rect key="frame" x="183" y="106" width="301" height="200"/>
+                        <rect key="frame" x="169" y="106" width="315" height="200"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="200" id="BHn-tW-WT2"/>
                         </constraints>
@@ -111,7 +112,7 @@ DQ
                         <rect key="frame" x="16" y="95" width="468" height="5"/>
                     </box>
                     <box horizontalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="eqs-uH-pgW">
-                        <rect key="frame" x="172" y="98" width="5" height="208"/>
+                        <rect key="frame" x="158" y="98" width="5" height="208"/>
                     </box>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="QPA-Ty-yka">
                         <rect key="frame" x="14" y="72" width="472" height="17"/>
@@ -131,15 +132,25 @@ DQ
                             <action selector="twentyFourClockFormat:" target="-2" id="lR8-Oz-no9"/>
                         </connections>
                     </button>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="7AB-yP-Tm5">
+                        <rect key="frame" x="14" y="111" width="132" height="17"/>
+                        <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="v1.0.0" id="nJd-Q2-GZo">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="tertiaryLabelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="QPA-Ty-yka" secondAttribute="trailing" constant="16" id="55a-dX-2BA"/>
                     <constraint firstItem="wdp-Vx-SFy" firstAttribute="leading" secondItem="Vnv-3I-Nmy" secondAttribute="leading" id="6NC-gM-6cG"/>
+                    <constraint firstItem="7AB-yP-Tm5" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="16" id="8L5-Sw-aQh"/>
                     <constraint firstItem="jmh-nA-HxL" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="16" id="96f-hV-Zll"/>
                     <constraint firstItem="Vnv-3I-Nmy" firstAttribute="top" secondItem="udT-lF-zKm" secondAttribute="bottom" constant="16" id="CeO-4Q-Q2l"/>
                     <constraint firstAttribute="trailing" secondItem="eY6-hS-6X6" secondAttribute="trailing" constant="16" id="Eid-An-tzJ"/>
-                    <constraint firstItem="TPH-Cu-qkW" firstAttribute="leading" secondItem="Vnv-3I-Nmy" secondAttribute="trailing" constant="64" id="GIb-Hd-cdO"/>
+                    <constraint firstItem="TPH-Cu-qkW" firstAttribute="leading" secondItem="Vnv-3I-Nmy" secondAttribute="trailing" constant="86" id="GIb-Hd-cdO"/>
                     <constraint firstItem="w0R-LT-WzY" firstAttribute="leading" secondItem="AJd-fC-cWE" secondAttribute="leading" id="HyX-6F-E0g"/>
+                    <constraint firstItem="eqs-uH-pgW" firstAttribute="leading" secondItem="7AB-yP-Tm5" secondAttribute="trailing" constant="16" id="KsJ-Rc-ycI"/>
                     <constraint firstItem="AJd-fC-cWE" firstAttribute="top" secondItem="QPA-Ty-yka" secondAttribute="bottom" constant="8" id="LKf-ds-KjG"/>
                     <constraint firstAttribute="trailing" secondItem="TPH-Cu-qkW" secondAttribute="trailing" constant="16" id="LS7-br-N2n"/>
                     <constraint firstItem="QPA-Ty-yka" firstAttribute="top" secondItem="jmh-nA-HxL" secondAttribute="bottom" constant="8" id="LcB-Ah-j2B"/>
@@ -157,16 +168,17 @@ DQ
                     <constraint firstItem="PFI-UJ-nv7" firstAttribute="centerY" secondItem="udT-lF-zKm" secondAttribute="centerY" id="iQn-fA-FzB"/>
                     <constraint firstItem="jmh-nA-HxL" firstAttribute="top" secondItem="TPH-Cu-qkW" secondAttribute="bottom" constant="8" id="ii8-rn-9bX"/>
                     <constraint firstAttribute="trailing" secondItem="jmh-nA-HxL" secondAttribute="trailing" constant="16" id="j6G-fv-ePr"/>
-                    <constraint firstItem="PFI-UJ-nv7" firstAttribute="leading" secondItem="udT-lF-zKm" secondAttribute="trailing" constant="16" id="jPu-Re-r1i"/>
+                    <constraint firstItem="PFI-UJ-nv7" firstAttribute="leading" secondItem="udT-lF-zKm" secondAttribute="trailing" constant="6" id="jPu-Re-r1i"/>
                     <constraint firstItem="TPH-Cu-qkW" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" constant="16" id="nJh-BA-FWb"/>
                     <constraint firstItem="eqs-uH-pgW" firstAttribute="bottom" secondItem="jmh-nA-HxL" secondAttribute="top" id="w1S-60-d1G"/>
+                    <constraint firstItem="jmh-nA-HxL" firstAttribute="firstBaseline" secondItem="7AB-yP-Tm5" secondAttribute="baseline" constant="16" id="wdA-sg-VQd"/>
                 </constraints>
             </view>
             <point key="canvasLocation" x="13.5" y="272"/>
         </window>
     </objects>
     <resources>
-        <image name="GitHub" width="429" height="256"/>
-        <image name="Twitter" width="429" height="256"/>
+        <image name="GitHub" width="858" height="512"/>
+        <image name="Twitter" width="858" height="512"/>
     </resources>
 </document>
