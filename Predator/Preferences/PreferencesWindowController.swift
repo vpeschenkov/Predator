@@ -19,6 +19,7 @@ final class PreferencesWindowController: NSWindowController {
     @IBOutlet var reverseButton: NSButton!
     @IBOutlet var previewView: NSView!
     @IBOutlet var twentyHourButton: NSButton!
+    @IBOutlet weak var versionLabel: NSTextField!
     
     private lazy var preferences = Preferences.shared
     
@@ -28,6 +29,9 @@ final class PreferencesWindowController: NSWindowController {
         colorPicker.color = preferences.primaryColor
         reverseButton.state = preferences.reverseFilling ? .on : .off
         twentyHourButton.state = preferences.twentyFourClockFormat ? .on : .off
+        if let version = Bundle(identifier: "com.vpeschenkov.predator-clock")?.infoDictionary?["CFBundleShortVersionString"] as? String {
+            versionLabel.stringValue = "v\(version)"
+        }
     }
 }
 
