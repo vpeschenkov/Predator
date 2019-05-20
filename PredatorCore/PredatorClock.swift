@@ -36,14 +36,7 @@ final public class PredatorClock {
             hours = hours == 0 ? 12 : hours
         }
         
-        // Width
-        var width = CGFloat(0)
-        if preferences.isTwentyFourClockFormat {
-            width = min(rect.size.width, rect.size.height) * 0.25
-        } else {
-            width = min(rect.size.width, rect.size.height) * 0.23
-        }
-        
+        let width = min(rect.size.width, rect.size.height) * 0.25
         let height = width * 1.5
         let center = CGPoint(x: rect.width / 2.0, y: rect.height / 2.0)
         let nummberSize = CGSize(width: width, height: height)
