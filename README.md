@@ -1,18 +1,10 @@
 ![Predator's screensaver](Screenshots/preview.png)
 
 <p align="center">
-  <a href="#" target="_blank">
-    <img src="https://img.shields.io/badge/platform-osx-brightgreen.svg" />
-  </a>
-  <a href="#" target="_blank">
-    <img src="https://img.shields.io/github/release/vpeschenkov/Predator.svg" />
-  </a>
-  <a href="#" target="_blank">
-    <img src="https://img.shields.io/github/release-date/vpeschenkov/Predator.svg" />
-  </a>
-  <a href="#" target="_blank">
-    <img src="https://img.shields.io/github/downloads/vpeschenkov/Predator/total.svg" />
-  </a>
+  <img src="https://img.shields.io/badge/platform-osx-brightgreen.svg" />
+  <img src="https://img.shields.io/github/release/vpeschenkov/Predator.svg" />
+  <img src="https://img.shields.io/github/release-date/vpeschenkov/Predator.svg" />
+  <img src="https://img.shields.io/github/downloads/vpeschenkov/Predator/total.svg" />
 </p>
 
 # Predator
@@ -137,7 +129,7 @@ Victor Peschenkov, v.peschenkov@gmail.com
 
 ## License
 
-`PredatorClock` is available under the Apache 2.0 license. See the [LICENSE.md](LICENSE.md) file for more info.
+`PredatorClock` is available under the Apache 2.0 license. See the [LICENSE](LICENSE) file for more info.
 
 [AM]: Screenshots/AM:PM/AM.png
 [PM]: Screenshots/AM:PM/PM.png
