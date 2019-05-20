@@ -1,6 +1,19 @@
 ![Predator's screensaver](Screenshots/preview.png)
 
-[![](https://github-basic-badges.herokuapp.com/downloads/vpeschenkov/Predator/total.svg)]()
+<p align="center">
+  <a href="#" target="_blank">
+    <img src="https://img.shields.io/badge/platform-osx-brightgreen.svg" />
+  </a>
+  <a href="#" target="_blank">
+    <img src="https://img.shields.io/github/release/vpeschenkov/Predator.svg" />
+  </a>
+  <a href="#" target="_blank">
+    <img src="https://img.shields.io/github/release-date/vpeschenkov/Predator.svg" />
+  </a>
+  <a href="#" target="_blank">
+    <img src="https://img.shields.io/github/downloads/vpeschenkov/Predator/total.svg" />
+  </a>
+</p>
 
 # Predator
 
