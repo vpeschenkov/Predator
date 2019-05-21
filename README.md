@@ -117,8 +117,6 @@ The rules are pretty simple, and you wouldn't spend much time to learn them.
 - If you **have a feature request**, open an issue.
 - If you **want to contribute**, submit a pull request.
 
-## Aknowlegements
-
 ## Author
 
 Victor Peschenkov, v.peschenkov@gmail.com
