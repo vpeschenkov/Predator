@@ -28,7 +28,7 @@ final public class PredatorClock {
         // Time
         let date = Date()
         let calendar = Calendar.current
-        var hours = calendar.component(.second, from: date)
+        var hours = calendar.component(.hour, from: date)
         let minutes = calendar.component(.minute, from: date)
         // Converts time to 12-hour clock format
         if configuration.isTwelveFourClock {
