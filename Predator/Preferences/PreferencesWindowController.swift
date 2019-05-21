@@ -32,7 +32,7 @@ final class PreferencesWindowController: NSWindowController {
         reverseCheckbox.state = preferences.isReverse ? .on : .off
         twentyHourCheckbox.state = preferences.isTwentyFourClock ? .on : .off
         if let version = Bundle(for: PreferencesWindowController.self).infoDictionary?["CFBundleShortVersionString"] as? String {
-            versionLabel.stringValue = "Predator's veraion  \(version)"
+            versionLabel.stringValue = "Predator's version  \(version)"
         }
         
         // Sparkle
