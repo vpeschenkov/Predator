@@ -18,20 +18,20 @@ import QuartzCore
 // MARK: - Predator Clock Screen Saver
 
 final public class PredatorClock {
-    private lazy var preferences = Preferences.shared
+    public var configuration: Configuration
     
-    public init() {
-        
+    public init(with configuration: Configuration) {
+        self.configuration = configuration
     }
     
     public func draw(in rect: CGRect, context: CGContext) {
         // Time
         let date = Date()
         let calendar = Calendar.current
-        var hours = calendar.component(.hour, from: date)
+        var hours = calendar.component(.second, from: date)
         let minutes = calendar.component(.minute, from: date)
         // Converts time to 12-hour clock format
-        if preferences.isTwelveFourClockFormat {
+        if configuration.isTwelveFourClock {
             hours = hours > 12 ? hours - 12 : hours
             hours = hours == 0 ? 12 : hours
         }
@@ -64,7 +64,7 @@ final public class PredatorClock {
             width: nummberSize.width,
             height: nummberSize.height
         ), context: context, value: Int(minutes % 10))
-        if preferences.isTwelveFourClockFormat {
+        if configuration.isTwelveFourClock {
             drawClockFormat(in: CGRect(
                 x: center.x + nummberSize.width * 2.0,
                 y: center.y - nummberSize.height / 2.0,
@@ -96,7 +96,7 @@ final public class PredatorClock {
         let p9 = CGPoint(x: p1.x + shape.width * 0.268, y: p6.y - shape.width * 0.713)
         // Drawing
         let isEnabled = { (value: Int,  part: Int) -> Bool in
-            if self.preferences.isTwentyFourClockFormat {
+            if self.configuration.isTwentyFourClock {
                 if value >= part {
                     return true
                 }
@@ -226,8 +226,8 @@ final public class PredatorClock {
     // MARK: - Drawing
     
     func drawPredatorLine(in context: CGContext, point: CGPoint, shape: CGSize, angle: CGFloat, enabled: Bool) {
-        var color = preferences.primaryColor.cgColor
-        let isFilling = preferences.reverseFilling == true ? !enabled : enabled
+        var color = configuration.primaryColor.cgColor
+        let isFilling = configuration.isReverse == true ? !enabled : enabled
         context.saveGState()
         if isFilling == false  {
             color = color.copy(alpha: 0.3) ?? color

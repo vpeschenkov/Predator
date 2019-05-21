@@ -12,11 +12,13 @@
 //  See the License for the specific language governing permissions and
 //  limitations under the License.
 
+import Sparkle
 import ScreenSaver
+import PredatorCore
 
 final class PredatorView: ScreenSaverView {
     fileprivate var timer: Timer?
-    fileprivate lazy var predator = PredatorClock()
+    fileprivate lazy var predator = PredatorClock(with: Preferences.shared)
     fileprivate lazy var preferences = PreferencesWindowController(windowNibName: Preferences.preferencesIdentifier)
     
     override init?(frame: NSRect, isPreview: Bool) {
@@ -41,6 +43,16 @@ final class PredatorView: ScreenSaverView {
     private func configure() {
         animationTimeInterval = Preferences.animationTimeInterval
         startAnimation()
+        
+        if Preferences.shared.isAutoInstallUpdates {
+            if let updater = SUUpdater(for: Bundle(for: PredatorView.self)) {
+                // 1 day
+                if updater.lastUpdateCheckDate.timeIntervalSinceNow.distance(to: -86400) > 0 {
+                    updater.resetUpdateCycle()
+                    updater.installUpdatesIfAvailable()
+                }
+            }
+        }
     }
 }
 

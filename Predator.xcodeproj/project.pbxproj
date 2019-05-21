@@ -8,9 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		356E4FB422835C63002FF647 /* PredatorClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356E4FB322835C63002FF647 /* PredatorClock.swift */; };
-		35810FC42284B7C2005852DE /* PredatorClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356E4FB322835C63002FF647 /* PredatorClock.swift */; };
 		35854B5C228746BC00356369 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35854B5B228746BC00356369 /* Preferences.swift */; };
-		35854B5D2287488D00356369 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35854B5B228746BC00356369 /* Preferences.swift */; };
 		35854B5F2287512300356369 /* PredatorPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35854B5E2287512300356369 /* PredatorPreviewView.swift */; };
 		358C9FCB228DF76C00574B1B /* thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = 358C9FC9228DF76C00574B1B /* thumbnail.png */; };
 		358C9FCC228DF76C00574B1B /* thumbnail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 358C9FCA228DF76C00574B1B /* thumbnail@2x.png */; };
@@ -25,6 +23,11 @@
 		35C1533022821C94005B24A9 /* PredatorCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 35C1532E22821C94005B24A9 /* PredatorCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		35C1533322821C94005B24A9 /* PredatorCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35C1532C22821C94005B24A9 /* PredatorCore.framework */; };
 		35C1533422821C94005B24A9 /* PredatorCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 35C1532C22821C94005B24A9 /* PredatorCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8BF4591B5BC37824A7CB71AD /* Pods_Predator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFB711BA0578401F50F95FBF /* Pods_Predator.framework */; };
+		8F66C694464AD1249ECD8F5B /* Pods_PredatorSandbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9B29F7AB9F2476E87362CEB /* Pods_PredatorSandbox.framework */; };
+		9828FEB62294142A00E1754D /* PredatorCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35C1532C22821C94005B24A9 /* PredatorCore.framework */; };
+		9828FEB8229414A400E1754D /* PredatorCore.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 35C1532C22821C94005B24A9 /* PredatorCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9828FEBA2294267200E1754D /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9828FEB92294267200E1754D /* Configuration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,9 +52,21 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9828FEB72294149500E1754D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9828FEB8229414A400E1754D /* PredatorCore.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2B32A618721DC1F9A5D6760E /* Pods-Predator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Predator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Predator/Pods-Predator.debug.xcconfig"; sourceTree = "<group>"; };
+		2F8805DA973547418F4B0B8B /* Pods-PredatorSandbox.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PredatorSandbox.release.xcconfig"; path = "Pods/Target Support Files/Pods-PredatorSandbox/Pods-PredatorSandbox.release.xcconfig"; sourceTree = "<group>"; };
 		356E4FB322835C63002FF647 /* PredatorClock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredatorClock.swift; sourceTree = "<group>"; };
 		35854B5B228746BC00356369 /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
 		35854B5E2287512300356369 /* PredatorPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredatorPreviewView.swift; sourceTree = "<group>"; };
@@ -73,6 +88,11 @@
 		35C1532C22821C94005B24A9 /* PredatorCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PredatorCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		35C1532E22821C94005B24A9 /* PredatorCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PredatorCore.h; sourceTree = "<group>"; };
 		35C1532F22821C94005B24A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		784233476E764D5CB66872DA /* Pods-PredatorSandbox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PredatorSandbox.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PredatorSandbox/Pods-PredatorSandbox.debug.xcconfig"; sourceTree = "<group>"; };
+		9828FEB92294267200E1754D /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		AFB711BA0578401F50F95FBF /* Pods_Predator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Predator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5879D787E4B70C80B50AE13 /* Pods-Predator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Predator.release.xcconfig"; path = "Pods/Target Support Files/Pods-Predator/Pods-Predator.release.xcconfig"; sourceTree = "<group>"; };
+		F9B29F7AB9F2476E87362CEB /* Pods_PredatorSandbox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PredatorSandbox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +100,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9828FEB62294142A00E1754D /* PredatorCore.framework in Frameworks */,
+				8BF4591B5BC37824A7CB71AD /* Pods_Predator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +110,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				35C1533322821C94005B24A9 /* PredatorCore.framework in Frameworks */,
+				8F66C694464AD1249ECD8F5B /* Pods_PredatorSandbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,9 +124,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06BB4D03EE79D3DEA050E7CB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2B32A618721DC1F9A5D6760E /* Pods-Predator.debug.xcconfig */,
+				B5879D787E4B70C80B50AE13 /* Pods-Predator.release.xcconfig */,
+				784233476E764D5CB66872DA /* Pods-PredatorSandbox.debug.xcconfig */,
+				2F8805DA973547418F4B0B8B /* Pods-PredatorSandbox.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		35810FBE2284B0F0005852DE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AFB711BA0578401F50F95FBF /* Pods_Predator.framework */,
+				F9B29F7AB9F2476E87362CEB /* Pods_PredatorSandbox.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -126,6 +162,7 @@
 				35C1532D22821C94005B24A9 /* PredatorCore */,
 				35C1530522820A34005B24A9 /* Products */,
 				35810FBE2284B0F0005852DE /* Frameworks */,
+				06BB4D03EE79D3DEA050E7CB /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -164,6 +201,7 @@
 			isa = PBXGroup;
 			children = (
 				35C1532E22821C94005B24A9 /* PredatorCore.h */,
+				9828FEB92294267200E1754D /* Configuration.swift */,
 				356E4FB322835C63002FF647 /* PredatorClock.swift */,
 				35C1533B22821CF3005B24A9 /* Support Files */,
 			);
@@ -225,10 +263,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 35C1530E22820A34005B24A9 /* Build configuration list for PBXNativeTarget "Predator" */;
 			buildPhases = (
+				BA84A12C32FFCB76AD9F4C62 /* [CP] Check Pods Manifest.lock */,
 				35C152FF22820A34005B24A9 /* Headers */,
 				35C1530022820A34005B24A9 /* Sources */,
 				35C1530122820A34005B24A9 /* Frameworks */,
 				35C1530222820A34005B24A9 /* Resources */,
+				9828FEB52294101300E1754D /* [CP] Embed Pods Frameworks */,
+				9828FEB72294149500E1754D /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -243,10 +284,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 35C15322228219ED005B24A9 /* Build configuration list for PBXNativeTarget "PredatorSandbox" */;
 			buildPhases = (
+				6EE7CB5DB64C20B525C2AF40 /* [CP] Check Pods Manifest.lock */,
 				35C15313228219EB005B24A9 /* Sources */,
 				35C15314228219EB005B24A9 /* Frameworks */,
 				35C15315228219EB005B24A9 /* Resources */,
 				35C1533822821C94005B24A9 /* Embed Frameworks */,
+				70ED588A993A54441FD4D3D5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -349,6 +392,100 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6EE7CB5DB64C20B525C2AF40 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PredatorSandbox-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		70ED588A993A54441FD4D3D5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PredatorSandbox/Pods-PredatorSandbox-frameworks.sh",
+				"${PODS_ROOT}/Sparkle/Sparkle.framework",
+				"${PODS_ROOT}/Sparkle/Sparkle.framework.dSYM",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Sparkle.framework",
+				"${DWARF_DSYM_FOLDER_PATH}/Sparkle.framework.dSYM",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PredatorSandbox/Pods-PredatorSandbox-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9828FEB52294101300E1754D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Predator/Pods-Predator-frameworks.sh",
+				"${PODS_ROOT}/Sparkle/Sparkle.framework",
+				"${PODS_ROOT}/Sparkle/Sparkle.framework.dSYM",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Sparkle.framework",
+				"${DWARF_DSYM_FOLDER_PATH}/Sparkle.framework.dSYM",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${SRCROOT}/Pods/Target Support Files/Pods-Predator/Pods-Predator-frameworks.sh\"\n";
+		};
+		BA84A12C32FFCB76AD9F4C62 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Predator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		35C1530022820A34005B24A9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -358,7 +495,6 @@
 				35C1531222820ADF005B24A9 /* PredatorView.swift in Sources */,
 				35854B5C228746BC00356369 /* Preferences.swift in Sources */,
 				35854B5F2287512300356369 /* PredatorPreviewView.swift in Sources */,
-				35810FC42284B7C2005852DE /* PredatorClock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,7 +511,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35854B5D2287488D00356369 /* Preferences.swift in Sources */,
+				9828FEBA2294267200E1754D /* Configuration.swift in Sources */,
 				356E4FB422835C63002FF647 /* PredatorClock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -453,7 +589,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -506,7 +642,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -515,22 +651,27 @@
 		};
 		35C1530F22820A34005B24A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B32A618721DC1F9A5D6760E /* Pods-Predator.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 6HP739XXXJ;
 				INFOPLIST_FILE = Predator/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vpeschenkov.predator-clock";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_COMPILATION_MODE = singlefile;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = saver;
@@ -539,22 +680,27 @@
 		};
 		35C1531022820A34005B24A9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5879D787E4B70C80B50AE13 /* Pods-Predator.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 6HP739XXXJ;
 				INFOPLIST_FILE = Predator/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vpeschenkov.predator-clock";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = saver;
 			};
@@ -562,14 +708,18 @@
 		};
 		35C15323228219ED005B24A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 784233476E764D5CB66872DA /* Pods-PredatorSandbox.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = PredatorSandbox/PredatorSandbox.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = 6HP739XXXJ;
 				INFOPLIST_FILE = PredatorSandbox/Info.plist;
+				INSTALL_PATH = "$(LOCAL_APPS_DIR)";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -577,6 +727,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vpeschenkov.predator-clock-sandbox";
 				PRODUCT_NAME = Predator;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -585,14 +736,18 @@
 		};
 		35C15324228219ED005B24A9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F8805DA973547418F4B0B8B /* Pods-PredatorSandbox.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = PredatorSandbox/PredatorSandbox.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = 6HP739XXXJ;
 				INFOPLIST_FILE = PredatorSandbox/Info.plist;
+				INSTALL_PATH = "$(LOCAL_APPS_DIR)";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -600,6 +755,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vpeschenkov.predator-clock-sandbox";
 				PRODUCT_NAME = Predator;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;

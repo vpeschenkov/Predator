@@ -13,9 +13,10 @@
 //  limitations under the License.
 
 import Cocoa
+import PredatorCore
 
 final class PredatorPreviewView: NSView {
-    private let predator = PredatorClock()
+    private lazy var predator = PredatorClock(with: Preferences.shared)
     
     override func draw(_ dirtyRect: NSRect) {
         super.draw(dirtyRect)
