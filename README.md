@@ -9,8 +9,7 @@
 
 # Predator
 
-**Predator** is a minimalistic screensaver for macOS based on predator's countdown time. Feel free to contrubute!
-
+**Predator** is a minimalistic screensaver for macOS based on predator's countdown timer. Don't worry you mac doesn't blow 😄. Feel free to contrubute!
 
 ## Compatibility
 
