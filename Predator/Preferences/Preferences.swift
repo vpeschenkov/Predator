@@ -13,8 +13,9 @@
 //  limitations under the License.
 
 import ScreenSaver
+import PredatorCore
 
-final class Preferences {
+final class Preferences: Configuration {
     
     static let shared = Preferences()
     static let animationTimeInterval = TimeInterval(1.0)
@@ -33,7 +34,7 @@ final class Preferences {
         }
     }
     
-    public var reverseFilling: Bool {
+    public var isReverse: Bool {
         set {
             defaults.set(newValue, forKey: Key.reverseFilling)
             defaults.synchronize()
@@ -44,7 +45,7 @@ final class Preferences {
         }
     }
     
-    public var twentyFourClockFormat: Bool {
+    public var isTwentyFourClock: Bool {
         set {
             defaults.set(newValue, forKey: Key.twentyFourClockFormat)
             defaults.synchronize()
@@ -55,15 +56,20 @@ final class Preferences {
         }
     }
     
-    public var isTwentyFourClockFormat: Bool {
+    public var isTwelveFourClock: Bool {
         get {
-            return twentyFourClockFormat
+            return isTwentyFourClock == false
         }
     }
     
-    public var isTwelveFourClockFormat: Bool {
+    public var isAutoInstallUpdates: Bool {
+        set {
+            defaults.set(newValue, forKey: Key.autoInstallUpdates)
+            defaults.synchronize()
+        }
+        
         get {
-            return twentyFourClockFormat == false
+            return defaults.object(forKey: Key.autoInstallUpdates) as? Bool ?? false
         }
     }
     
@@ -73,16 +79,18 @@ final class Preferences {
         static let primaryColor = "primory-color-key"
         static let reverseFilling = "reverse-filling-key"
         static let twentyFourClockFormat = "twenty-four-clock-format-key"
+        static let autoInstallUpdates = "auto-install-updates"
     }
     
     fileprivate lazy var defaults: ScreenSaverDefaults = {
-        guard let bundleIdentifier = Bundle(for: Preferences.self).bundleIdentifier, let defaults = ScreenSaverDefaults(forModuleWithName: bundleIdentifier) else {
+        guard let defaults = ScreenSaverDefaults(forModuleWithName: "com.vpeschenkov.predator-clock") else {
             fatalError("Failed to retrieve settings")
         }
         defaults.register(defaults: [
             Key.primaryColor: NSKeyedArchiver.archivedData(withRootObject: NSColor.red),
             Key.reverseFilling: false,
-            Key.twentyFourClockFormat: true
+            Key.twentyFourClockFormat: true,
+            Key.autoInstallUpdates: false
             ])
         return defaults
     }()

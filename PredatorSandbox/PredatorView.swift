@@ -15,9 +15,35 @@
 import Cocoa
 import PredatorCore
 
+class MainConfiguration: Configuration {
+    var primaryColor: NSColor {
+        return NSColor.red
+    }
+    
+    var isReverse: Bool {
+        return false
+    }
+    
+    var isTwentyFourClock: Bool {
+        return true
+    }
+        
+    var isTwelveFourClock: Bool {
+        return false
+    }
+        
+    var isAutoInstallUpdates: Bool {
+        return false
+    }
+        
+    var isRandomColor: Bool {
+        return false
+    }
+}
+
 class PredatorView: NSView {
     private var timer: Timer?
-    private let predator = PredatorClock()
+    private lazy var predator = PredatorClock(with: MainConfiguration())
     
     required init?(coder decoder: NSCoder) {
         super.init(coder: decoder)

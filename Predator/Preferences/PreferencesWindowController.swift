@@ -13,24 +13,46 @@
 //  limitations under the License.
 
 import Cocoa
+import Sparkle
 
 final class PreferencesWindowController: NSWindowController {
     @IBOutlet var colorPicker: NSColorWell!
-    @IBOutlet var reverseButton: NSButton!
     @IBOutlet var previewView: NSView!
-    @IBOutlet var twentyHourButton: NSButton!
-    @IBOutlet weak var versionLabel: NSTextField!
+    @IBOutlet var reverseCheckbox: NSButton!
+    @IBOutlet var twentyHourCheckbox: NSButton!
+    @IBOutlet var autoInstallUpdatesCheckbox: NSButton!
+    @IBOutlet var versionLabel: NSTextField!
     
     private lazy var preferences = Preferences.shared
     
     override func windowDidLoad() {
         super.windowDidLoad()
-
+        
         colorPicker.color = preferences.primaryColor
-        reverseButton.state = preferences.reverseFilling ? .on : .off
-        twentyHourButton.state = preferences.twentyFourClockFormat ? .on : .off
-        if let version = Bundle(identifier: "com.vpeschenkov.predator-clock")?.infoDictionary?["CFBundleShortVersionString"] as? String {
-            versionLabel.stringValue = "v\(version)"
+        reverseCheckbox.state = preferences.isReverse ? .on : .off
+        twentyHourCheckbox.state = preferences.isTwentyFourClock ? .on : .off
+        if let version = Bundle(for: PreferencesWindowController.self).infoDictionary?["CFBundleShortVersionString"] as? String {
+            versionLabel.stringValue = "Predator's veraion  \(version)"
+        }
+        
+        // Sparkle
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(sparkleWillRestart),
+            name: .SUUpdaterWillRestart,
+            object: nil
+        )
+        
+        autoInstallUpdatesCheckbox.state = preferences.isAutoInstallUpdates ? .on : .off
+        
+        let updater = SUUpdater(for: Bundle(for: PreferencesWindowController.self))
+        updater?.checkForUpdatesInBackground()
+    }
+    
+    @objc func sparkleWillRestart() {
+        window?.sheetParent?.endSheet(window!)
+        for app in NSWorkspace.shared.runningApplications where app.bundleIdentifier == "com.apple.systempreferences" {
+            app.terminate()
         }
     }
 }
@@ -40,7 +62,7 @@ final class PreferencesWindowController: NSWindowController {
 extension PreferencesWindowController {
     
     @IBAction func reverseAction(_ sender: NSButton) {
-        preferences.reverseFilling = sender.state == .on ? true : false
+        preferences.isReverse = sender.state == .on ? true : false
         previewView.setNeedsDisplay(previewView.bounds)
     }
     
@@ -50,8 +72,12 @@ extension PreferencesWindowController {
     }
     
     @IBAction func twentyFourClockFormat(_ sender: NSButton) {
-        preferences.twentyFourClockFormat = sender.state == .on ? true : false
+        preferences.isTwentyFourClock = sender.state == .on ? true : false
         previewView.setNeedsDisplay(previewView.bounds)
+    }
+    
+    @IBAction func autoInstallUpdatesAction(_ sender: NSButton) {
+        preferences.isAutoInstallUpdates = sender.state == .on ? true : false
     }
     
     @IBAction func githubAction(_ sender: Any) {
