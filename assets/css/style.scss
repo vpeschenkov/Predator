@@ -1,0 +1,17 @@
+---
+---
+
+@import 'jekyll-theme-hacker';
+
+.column {
+  float: left;
+  width: 32.30%;
+  padding: 0.5%;
+  box-align: center;
+}
+  
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
