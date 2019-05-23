@@ -401,7 +401,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-PredatorSandbox/Pods-PredatorSandbox-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-PredatorSandbox/Pods-PredatorSandbox-frameworks.sh",
 				"${PODS_ROOT}/Sparkle/Sparkle.framework",
 				"${PODS_ROOT}/Sparkle/Sparkle.framework.dSYM",
 			);
@@ -414,7 +414,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PredatorSandbox/Pods-PredatorSandbox-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PredatorSandbox/Pods-PredatorSandbox-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		6EE7CB5DB64C20B525C2AF40 /* [CP] Check Pods Manifest.lock */ = {
