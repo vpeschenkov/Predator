@@ -17,7 +17,7 @@
 	<key>CFBundleShortVersionString</key>
 	<string>1.0.3</string>
 	<key>CFBundleVersion</key>
-	<string>9</string>
+	<string>10</string>
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2019 Victor Peschenkov. All rights reserved.</string>
 	<key>NSPrincipalClass</key>
@@ -25,6 +25,6 @@
 	<key>SUFeedURL</key>
 	<string>https://raw.githubusercontent.com/vpeschenkov/Predator/master/appcast.xml</string>
 	<key>SUPublicEDKey</key>
-	<string>0DE4059B-6D10-4F04-B8D5-A048951A2BDD 730BC450-4369-4DF8-8D17-8154E1ADD021</string>
+	<string>D1JFuCpJqULiknQGo0pZSh4rCx/eAN02nrwAfdRw0Ww=</string>
 </dict>
 </plist>
