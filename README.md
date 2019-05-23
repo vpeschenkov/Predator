@@ -15,16 +15,6 @@
 
 Requires OS X El Capitan 10.11 and newer
 
-## Features
-
-- Reverse filling
-- 12 and 24-hour clock support
-- Color selection
-
-<p align="center">
-  <img src="assets/settings.png">
-</p>
-
 ## Installation
 
 1. Click [here](https://github.com/vpeschenkov/Predator/releases/download/1.0.2/Predator.saver.zip) to download the latest release
@@ -37,14 +27,19 @@ Requires OS X El Capitan 10.11 and newer
 
 **Important**: If you haven't quit System Preferences before installation and were upgrading from a previous version, I strongly recommend you quit the application after installation, then reopen it, as updated Swift screensavers aren't loaded correctly in an active System Preferences session.
 
-## Uninstallation 
+## Features
 
-- Right-click on Predator in System Preferences and select `Delete Predator`, or
-- Delete `PredatorClock.saver` either in `/Library/Screen Savers` or `/Users/USERNAME/Library/Screen Savers`.
+- Reverse filling
+- 12 and 24-hour clock support
+- Color selection
 
-## How to read the clock or the clock rules
+<p align="center">
+  <img src="assets/settings.png">
+</p>
 
-The rules are pretty simple, and you wouldn't spend much time to learn them.
+## Predator’s clock rules
+
+The rules are pretty simple, and you wouldn’t spend much time to learn them.
 
 ### 24-hour clock rules
 
@@ -108,6 +103,11 @@ The rules are pretty simple, and you wouldn't spend much time to learn them.
 | AM     | PM     |
 |--------|--------|
 | ![][AM]| ![][PM]|
+
+## Uninstallation 
+
+- Right-click on Predator in System Preferences and select `Delete Predator`, or
+- Delete `PredatorClock.saver` either in `/Library/Screen Savers` or `/Users/USERNAME/Library/Screen Savers`.
 
 ## Contributing
 
