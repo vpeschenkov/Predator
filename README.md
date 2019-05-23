@@ -9,7 +9,7 @@
 
 # Predator
 
-**Predator** is a minimalistic screensaver for macOS based on predator's countdown timer. Don't worry you mac doesn't blow 😄. Feel free to contrubute!
+**Predator** is a minimalistic screensaver for macOS based on predator's countdown timer. Don't worry you mac doesn't blow 😄. It is completely open source, feel free to contribute!
 
 ## Compatibility
 
@@ -29,9 +29,9 @@ Requires OS X El Capitan 10.11 and newer
 
 ## Features
 
-- Reverse filling
-- 12 and 24-hour clock support
-- Color selection
+- Support 12-h and 24-h clock 
+- Select which color you want to see
+- Reverse shapes filling
 
 <p align="center">
   <img src="assets/settings.png">
