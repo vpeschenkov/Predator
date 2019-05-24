@@ -3,8 +3,8 @@
 <title>Predator</title>
 <item>
 <title>1.0.3</title>
-<pubDate>Thu, 23 May 2019 18:50:03 +0300</pubDate>
+<pubDate>Fri, 24 May 2019 23:02:59 +0300</pubDate>
 <sparkle:minimumSystemVersion>10.11</sparkle:minimumSystemVersion>
-<enclosure url="https://github.com/vpeschenkov/Predator/releases/download/1.0.3/Predator.saver.zip" sparkle:version="9" sparkle:shortVersionString="1.0.3" length="8432044" type="application/octet-stream"/>
+<enclosure url="https://github.com/vpeschenkov/Predator/releases/download/1.0.3/Predator.saver.zip" sparkle:version="10" sparkle:shortVersionString="1.0.3" length="8432314" type="application/octet-stream"/>
 </item>
 </channel></rss>
