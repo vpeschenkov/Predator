@@ -16,6 +16,8 @@ Requires OS X El Capitan 10.11 and newer
 6. Select `General`
 7. On the bottom side, select `Open Anyway`
 
+If you see an error message saying "This app is damaged and can't be opened, you should move it to the trash", download the file with Safari, to prevent macOS Gatekeeper from throwing that error. Note that some outdated unzip software may cause that issue too.
+
 **Important**: If you haven't quit System Preferences before installation and were upgrading from a previous version, I strongly recommend you quit the application after installation, then reopen it, as updated Swift screensavers aren't loaded correctly in an active System Preferences session.
 
 ## Features
