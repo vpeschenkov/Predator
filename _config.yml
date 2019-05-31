@@ -5,7 +5,7 @@ show_downloads: true
 preview_url: https://raw.githubusercontent.com/vpeschenkov/Predator/master/Screenshots/preview.png 
 
 github:
-  zip_url: https://github.com/vpeschenkov/Predator/releases/download/1.0.3/Predator.saver.zip
+  zip_url: https://github.com/vpeschenkov/Predator/releases/download/1.0.5/Predator.saver.zip
   repository_url: https://github.com/vpeschenkov/Predator
 
 google_analytics: UA-140723702-1
