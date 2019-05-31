@@ -31,7 +31,7 @@ final public class PredatorClock {
         var hours = calendar.component(.hour, from: date)
         let minutes = calendar.component(.minute, from: date)
         // Converts time to 12-hour clock format
-        if configuration.isTwelveFourClock {
+        if configuration.twelveHours {
             hours = hours > 12 ? hours - 12 : hours
             hours = hours == 0 ? 12 : hours
         }
@@ -64,7 +64,7 @@ final public class PredatorClock {
             width: nummberSize.width,
             height: nummberSize.height
         ), context: context, value: Int(minutes % 10))
-        if configuration.isTwelveFourClock {
+        if configuration.twelveHours {
             drawClockFormat(in: CGRect(
                 x: center.x + nummberSize.width * 2.0,
                 y: center.y - nummberSize.height / 2.0,
@@ -96,7 +96,7 @@ final public class PredatorClock {
         let p9 = CGPoint(x: p1.x + shape.width * 0.268, y: p6.y - shape.width * 0.713)
         // Drawing
         let isEnabled = { (value: Int,  part: Int) -> Bool in
-            if self.configuration.isTwentyFourClock {
+            if self.configuration.twentyFourHours {
                 if value >= part {
                     return true
                 }
@@ -226,25 +226,17 @@ final public class PredatorClock {
     // MARK: - Drawing
     
     func drawPredatorLine(in context: CGContext, point: CGPoint, shape: CGSize, angle: CGFloat, enabled: Bool) {
-        var color = configuration.primaryColor.cgColor
-        let isFilling = configuration.isReverse == true ? !enabled : enabled
-        context.saveGState()
-        if isFilling == false  {
-            color = color.copy(alpha: 0.3) ?? color
-        }
-        context.rotate(point, angle: angle)
-        context.setFillColor(color)
-        context.setStrokeColor(color.copy(alpha: 1.0) ?? color)
-        context.setShadow(offset: .zero, blur: 10.0, color: color)
-        context.addPath(self.buildPredatorShapePath(in: CGRect(
-            x: point.x,
-            y: point.y,
-            width: shape.width,
-            height: shape.height
-        )))
-        context.closePath()
-        context.fillPath()
-        if isFilling == false {
+        if configuration.drawEmptyDigits || enabled {
+            var color = configuration.primaryColor.cgColor
+            let reverse = configuration.reverse == true ? !enabled : enabled
+            context.saveGState()
+            if reverse == false  {
+                color = color.copy(alpha: 0.3) ?? color
+            }
+            context.rotate(point, angle: angle)
+            context.setFillColor(color)
+            context.setStrokeColor(color.copy(alpha: 1.0) ?? color)
+            context.setShadow(offset: .zero, blur: 10.0, color: color)
             context.addPath(self.buildPredatorShapePath(in: CGRect(
                 x: point.x,
                 y: point.y,
@@ -252,9 +244,19 @@ final public class PredatorClock {
                 height: shape.height
             )))
             context.closePath()
-            context.strokePath()
+            context.fillPath()
+            if reverse == false {
+                context.addPath(self.buildPredatorShapePath(in: CGRect(
+                    x: point.x,
+                    y: point.y,
+                    width: shape.width,
+                    height: shape.height
+                )))
+                context.closePath()
+                context.strokePath()
+            }
+            context.restoreGState()
         }
-        context.restoreGState()
     }
     
     // MARK: - Number Paths

@@ -44,7 +44,7 @@ final class PredatorView: ScreenSaverView {
         animationTimeInterval = Preferences.animationTimeInterval
         startAnimation()
         
-        if Preferences.shared.isAutoInstallUpdates {
+        if Preferences.shared.autoUpdates {
             if let updater = SUUpdater(for: Bundle(for: PredatorView.self)) {
                 // 1 day
                 if updater.lastUpdateCheckDate.timeIntervalSinceNow.distance(to: -86400) > 0 {

@@ -10,8 +10,9 @@ import Foundation
 
 public protocol Configuration {
     var primaryColor: NSColor { get }
-    var isReverse: Bool { get }
-    var isTwentyFourClock: Bool { get }
-    var isTwelveFourClock: Bool { get }
-    var isAutoInstallUpdates: Bool { get }
+    var reverse: Bool { get }
+    var twentyFourHours: Bool { get }
+    var twelveHours: Bool { get }
+    var autoUpdates: Bool { get }
+    var drawEmptyDigits: Bool { get }
 }

@@ -17,11 +17,13 @@ import PredatorCore
 
 final class Preferences: Configuration {
     
-    static let shared = Preferences()
-    static let animationTimeInterval = TimeInterval(1.0)
-    static let preferencesIdentifier = "PreferencesWindowController"
-    static let github = "https://github.com/vpeschenkov/predator-clock-screensaver"
-    static let twitter = "https://twitter.com/vpeschenkov"
+    static public let shared = Preferences()
+    static public let animationTimeInterval = TimeInterval(1.0)
+    static public let preferencesIdentifier = "PreferencesWindowController"
+    static public let github = "https://github.com/vpeschenkov/predator-clock-screensaver"
+    static public let twitter = "https://twitter.com/vpeschenkov"
+    
+    public let bundle = Bundle(for: Preferences.self)
     
     public var primaryColor: NSColor {
         set {
@@ -34,63 +36,78 @@ final class Preferences: Configuration {
         }
     }
     
-    public var isReverse: Bool {
+    public var reverse: Bool {
         set {
             defaults.set(newValue, forKey: Key.reverseFilling)
             defaults.synchronize()
         }
         
         get {
-            return defaults.object(forKey: Key.reverseFilling) as? Bool ?? false
+            return defaults.bool(forKey: Key.reverseFilling)
         }
     }
     
-    public var isTwentyFourClock: Bool {
+    public var twentyFourHours: Bool {
         set {
             defaults.set(newValue, forKey: Key.twentyFourClockFormat)
             defaults.synchronize()
         }
         
         get {
-            return defaults.object(forKey: Key.twentyFourClockFormat) as? Bool ?? false
+            return defaults.bool(forKey: Key.twentyFourClockFormat)
         }
     }
     
-    public var isTwelveFourClock: Bool {
+    public var twelveHours: Bool {
         get {
-            return isTwentyFourClock == false
+            return twentyFourHours == false
         }
     }
     
-    public var isAutoInstallUpdates: Bool {
+    public var autoUpdates: Bool {
         set {
             defaults.set(newValue, forKey: Key.autoInstallUpdates)
             defaults.synchronize()
         }
         
         get {
-            return defaults.object(forKey: Key.autoInstallUpdates) as? Bool ?? false
+            return defaults.bool(forKey: Key.autoInstallUpdates)
         }
     }
     
-    // MARK: - Key
+    public var drawEmptyDigits: Bool {
+        set {
+            defaults.set(newValue, forKey: Key.drawEmptyDigits)
+            defaults.synchronize()
+        }
+        
+        get {
+
+            return defaults.bool(forKey: Key.drawEmptyDigits)
+        }
+    }
+    
+    // MARK: - Keys
     
     private enum Key {
         static let primaryColor = "primory-color-key"
         static let reverseFilling = "reverse-filling-key"
         static let twentyFourClockFormat = "twenty-four-clock-format-key"
         static let autoInstallUpdates = "auto-install-updates"
+        static let drawEmptyDigits = "draw-empty-digits"
     }
     
     fileprivate lazy var defaults: ScreenSaverDefaults = {
-        guard let defaults = ScreenSaverDefaults(forModuleWithName: "com.vpeschenkov.predator-clock") else {
+        guard let bundleIdentifier = bundle.bundleIdentifier, let defaults = ScreenSaverDefaults(forModuleWithName: bundleIdentifier) else {
             fatalError("Failed to retrieve settings")
         }
+        
         defaults.register(defaults: [
             Key.primaryColor: NSKeyedArchiver.archivedData(withRootObject: NSColor.red),
             Key.reverseFilling: false,
             Key.twentyFourClockFormat: true,
-            Key.autoInstallUpdates: false
+            Key.autoInstallUpdates: false,
+            Key.drawEmptyDigits: false
             ])
         return defaults
     }()

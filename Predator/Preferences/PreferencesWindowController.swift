@@ -21,6 +21,7 @@ final class PreferencesWindowController: NSWindowController {
     @IBOutlet var reverseCheckbox: NSButton!
     @IBOutlet var twentyHourCheckbox: NSButton!
     @IBOutlet var autoInstallUpdatesCheckbox: NSButton!
+    @IBOutlet var drawEmptyDigitsCheckbox: NSButton!
     @IBOutlet var versionLabel: NSTextField!
     
     private lazy var preferences = Preferences.shared
@@ -29,9 +30,11 @@ final class PreferencesWindowController: NSWindowController {
         super.windowDidLoad()
         
         colorPicker.color = preferences.primaryColor
-        reverseCheckbox.state = preferences.isReverse ? .on : .off
-        twentyHourCheckbox.state = preferences.isTwentyFourClock ? .on : .off
-        if let version = Bundle(for: PreferencesWindowController.self).infoDictionary?["CFBundleShortVersionString"] as? String {
+        reverseCheckbox.state = preferences.reverse ? .on : .off
+        twentyHourCheckbox.state = preferences.twentyFourHours ? .on : .off
+        drawEmptyDigitsCheckbox.state = preferences.drawEmptyDigits ? .on : .off
+        
+        if let version = preferences.bundle.infoDictionary?["CFBundleShortVersionString"] as? String {
             versionLabel.stringValue = "Predator's version  \(version)"
         }
         
@@ -43,7 +46,7 @@ final class PreferencesWindowController: NSWindowController {
             object: nil
         )
         
-        autoInstallUpdatesCheckbox.state = preferences.isAutoInstallUpdates ? .on : .off
+        autoInstallUpdatesCheckbox.state = preferences.autoUpdates ? .on : .off
         
         let updater = SUUpdater(for: Bundle(for: PreferencesWindowController.self))
         updater?.checkForUpdatesInBackground()
@@ -62,7 +65,7 @@ final class PreferencesWindowController: NSWindowController {
 extension PreferencesWindowController {
     
     @IBAction func reverseAction(_ sender: NSButton) {
-        preferences.isReverse = sender.state == .on ? true : false
+        preferences.reverse = sender.state == .on ? true : false
         previewView.setNeedsDisplay(previewView.bounds)
     }
     
@@ -71,13 +74,18 @@ extension PreferencesWindowController {
         previewView.setNeedsDisplay(previewView.bounds)
     }
     
-    @IBAction func twentyFourClockFormat(_ sender: NSButton) {
-        preferences.isTwentyFourClock = sender.state == .on ? true : false
+    @IBAction func twentyFourClockFormatAction(_ sender: NSButton) {
+        preferences.twentyFourHours = sender.state == .on ? true : false
         previewView.setNeedsDisplay(previewView.bounds)
     }
     
     @IBAction func autoInstallUpdatesAction(_ sender: NSButton) {
-        preferences.isAutoInstallUpdates = sender.state == .on ? true : false
+        preferences.autoUpdates = sender.state == .on ? true : false
+    }
+    
+    @IBAction func drawEmptyDigitsAction(_ sender: NSButton) {
+        preferences.drawEmptyDigits = sender.state == .on ? true : false
+        previewView.setNeedsDisplay(previewView.bounds)
     }
     
     @IBAction func githubAction(_ sender: Any) {

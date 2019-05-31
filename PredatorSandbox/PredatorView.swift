@@ -16,29 +16,12 @@ import Cocoa
 import PredatorCore
 
 class MainConfiguration: Configuration {
-    var primaryColor: NSColor {
-        return NSColor.red
-    }
-    
-    var isReverse: Bool {
-        return false
-    }
-    
-    var isTwentyFourClock: Bool {
-        return true
-    }
-        
-    var isTwelveFourClock: Bool {
-        return false
-    }
-        
-    var isAutoInstallUpdates: Bool {
-        return false
-    }
-        
-    var isRandomColor: Bool {
-        return false
-    }
+    var primaryColor: NSColor = .red
+    var reverse: Bool = false
+    var twentyFourHours: Bool = true
+    var twelveHours: Bool = false
+    var autoUpdates: Bool = false
+    var drawEmptyDigits: Bool = false
 }
 
 class PredatorView: NSView {

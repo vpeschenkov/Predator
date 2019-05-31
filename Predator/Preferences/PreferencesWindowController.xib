@@ -10,6 +10,7 @@
             <connections>
                 <outlet property="autoInstallUpdatesCheckbox" destination="7PC-sc-V9a" id="2zu-7h-S9s"/>
                 <outlet property="colorPicker" destination="PFI-UJ-nv7" id="9cy-56-h37"/>
+                <outlet property="drawEmptyDigitsCheckbox" destination="t0E-5m-5Wc" id="zcO-98-H1p"/>
                 <outlet property="previewView" destination="Bnn-dY-5vI" id="8ue-e3-Zel"/>
                 <outlet property="reverseCheckbox" destination="Vnv-3I-Nmy" id="KW1-DP-fDw"/>
                 <outlet property="twentyHourCheckbox" destination="wdp-Vx-SFy" id="kMp-rq-0lE"/>
@@ -23,7 +24,7 @@
             <windowStyleMask key="styleMask" titled="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="196" y="240" width="560" height="320"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1057"/>
             <view key="contentView" wantsLayer="YES" id="EiT-Mj-1SZ">
                 <rect key="frame" x="0.0" y="0.0" width="560" height="309"/>
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -116,7 +117,7 @@ DQ
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="twentyFourClockFormat:" target="-2" id="lR8-Oz-no9"/>
+                            <action selector="twentyFourClockFormatAction:" target="-2" id="oNg-Ux-azD"/>
                         </connections>
                     </button>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="7AB-yP-Tm5">
@@ -158,9 +159,23 @@ DQ
                     <box verticalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="jqU-bc-Phd">
                         <rect key="frame" x="16" y="95" width="528" height="5"/>
                     </box>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="t0E-5m-5Wc">
+                        <rect key="frame" x="14" y="131" width="132" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="1dL-3C-ZSj"/>
+                        </constraints>
+                        <buttonCell key="cell" type="check" title="Draw empty digits" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="ujV-7J-86w">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="drawEmptyDigitsAction:" target="-2" id="IyI-ab-FB1"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <constraints>
                     <constraint firstItem="w0R-LT-WzY" firstAttribute="leading" secondItem="QPA-Ty-yka" secondAttribute="leading" id="3Am-Ol-5c9"/>
+                    <constraint firstItem="t0E-5m-5Wc" firstAttribute="leading" secondItem="udT-lF-zKm" secondAttribute="leading" id="8QQ-dN-xGD"/>
                     <constraint firstItem="jqU-bc-Phd" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="16" id="9ro-Pg-kPE"/>
                     <constraint firstAttribute="trailing" secondItem="Bnn-dY-5vI" secondAttribute="trailing" constant="16" id="ALb-Eb-HOP"/>
                     <constraint firstAttribute="bottom" secondItem="AJd-fC-cWE" secondAttribute="bottom" constant="16" id="DOa-tl-0rd"/>
@@ -170,6 +185,7 @@ DQ
                     <constraint firstItem="udT-lF-zKm" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" constant="16" id="MZn-Dj-AOl"/>
                     <constraint firstItem="udT-lF-zKm" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="16" id="OEk-2C-3UQ"/>
                     <constraint firstAttribute="bottom" secondItem="eY6-hS-6X6" secondAttribute="bottom" constant="16" id="Oke-HN-RRc"/>
+                    <constraint firstItem="t0E-5m-5Wc" firstAttribute="top" secondItem="7PC-sc-V9a" secondAttribute="bottom" constant="16" id="Onc-YA-uOL"/>
                     <constraint firstItem="PFI-UJ-nv7" firstAttribute="leading" secondItem="udT-lF-zKm" secondAttribute="trailing" constant="8" id="P3y-NY-qzt"/>
                     <constraint firstItem="7PC-sc-V9a" firstAttribute="leading" secondItem="udT-lF-zKm" secondAttribute="leading" id="TOq-M3-jlQ"/>
                     <constraint firstItem="wdp-Vx-SFy" firstAttribute="leading" secondItem="udT-lF-zKm" secondAttribute="leading" id="UQE-eG-ceo"/>
@@ -192,7 +208,7 @@ DQ
         </window>
     </objects>
     <resources>
-        <image name="GitHub" width="429" height="256"/>
-        <image name="Twitter" width="429" height="256"/>
+        <image name="GitHub" width="858" height="512"/>
+        <image name="Twitter" width="858" height="512"/>
     </resources>
 </document>
