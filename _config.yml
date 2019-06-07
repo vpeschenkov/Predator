@@ -1,11 +1,5 @@
 theme: jekyll-theme-hacker
 title: Predator
 description: Predator is a minimalistic screensaver for macOS based on predator's countdown timer. Don't worry your mac doesn't blow 😄. It is completely open source, feel free to contribute!
-show_downloads: true
 preview_url: https://raw.githubusercontent.com/vpeschenkov/Predator/master/Screenshots/preview.png 
-
-github:
-  zip_url: https://github.com/vpeschenkov/Predator/releases/download/1.0.5/Predator.saver.zip
-  repository_url: https://github.com/vpeschenkov/Predator
-
 google_analytics: UA-140723702-1
