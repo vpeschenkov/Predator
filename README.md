@@ -1,10 +1,10 @@
-![Predator's screensaver](assets/preview.png)
+![Predator Screensaver](assets/preview.png)
 
 <p align="center">
-  <img src="https://img.shields.io/badge/platform-osx-brightgreen.svg" />
-  <img src="https://img.shields.io/github/release/vpeschenkov/Predator.svg" />
-  <img src="https://img.shields.io/github/release-date/vpeschenkov/Predator.svg" />
-  <img src="https://img.shields.io/github/downloads/vpeschenkov/Predator/total.svg" />
+  <img src="https://img.shields.io/badge/platform-osx-brightgreen.svg"/>
+  <img src="https://img.shields.io/github/release/vpeschenkov/Predator.svg"/>
+  <img src="https://img.shields.io/github/release-date/vpeschenkov/Predator.svg"/>
+  <img src="https://img.shields.io/github/downloads/vpeschenkov/Predator/total.svg"/>
 </p>
 
 # Predator
@@ -36,7 +36,7 @@ If you see an error message saying "This app is damaged and can't be opened, you
 - Reverse shapes filling
 
 <p align="center">
-  <img src="assets/settings.png">
+  <img src="assets/settings.png" alt="Predator Settings">
 </p>
 
 ## Predator’s clock rules
