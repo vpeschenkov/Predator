@@ -8,7 +8,6 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="PreferencesWindowController" customModule="Predator" customModuleProvider="target">
             <connections>
-                <outlet property="autoInstallUpdatesCheckbox" destination="7PC-sc-V9a" id="2zu-7h-S9s"/>
                 <outlet property="colorPicker" destination="PFI-UJ-nv7" id="9cy-56-h37"/>
                 <outlet property="drawEmptyDigitsCheckbox" destination="t0E-5m-5Wc" id="zcO-98-H1p"/>
                 <outlet property="previewView" destination="Bnn-dY-5vI" id="8ue-e3-Zel"/>
@@ -30,7 +29,7 @@
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 <subviews>
                     <colorWell translatesAutoresizingMaskIntoConstraints="NO" id="PFI-UJ-nv7">
-                        <rect key="frame" x="111" y="273" width="44" height="20"/>
+                        <rect key="frame" x="88" y="273" width="44" height="20"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="20" id="7ko-Uq-JXd"/>
                             <constraint firstAttribute="width" constant="44" id="qf0-Wf-dUc"/>
@@ -41,11 +40,11 @@
                         </connections>
                     </colorWell>
                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Vnv-3I-Nmy">
-                        <rect key="frame" x="14" y="203" width="154" height="24"/>
+                        <rect key="frame" x="14" y="167" width="118" height="24"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="20" id="3GJ-Au-hwh"/>
                         </constraints>
-                        <buttonCell key="cell" type="check" title="Reverse shapes filling" bezelStyle="regularSquare" imagePosition="left" inset="2" id="8af-fe-00T">
+                        <buttonCell key="cell" type="check" title="Reverse shapes" bezelStyle="regularSquare" imagePosition="left" inset="2" id="8af-fe-00T">
                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -84,11 +83,11 @@
                         </connections>
                     </button>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="udT-lF-zKm">
-                        <rect key="frame" x="14" y="273" width="91" height="20"/>
+                        <rect key="frame" x="14" y="273" width="68" height="20"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="20" id="7Bp-ms-8VY"/>
                         </constraints>
-                        <textFieldCell key="cell" lineBreakMode="clipping" title="Select a color:" id="9CI-hk-4rQ">
+                        <textFieldCell key="cell" lineBreakMode="clipping" title="Pick color:" id="9CI-hk-4rQ">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -128,19 +127,6 @@ DQ
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="7PC-sc-V9a">
-                        <rect key="frame" x="14" y="167" width="142" height="24"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="20" id="tti-1H-2ap"/>
-                        </constraints>
-                        <buttonCell key="cell" type="check" title="Auto install updates" bezelStyle="regularSquare" imagePosition="left" inset="2" id="Ocg-MT-kov">
-                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                            <font key="font" metaFont="system"/>
-                        </buttonCell>
-                        <connections>
-                            <action selector="autoInstallUpdatesAction:" target="-2" id="3Cj-hj-t5Y"/>
-                        </connections>
-                    </button>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="QPA-Ty-yka">
                         <rect key="frame" x="14" y="72" width="145" height="17"/>
                         <textFieldCell key="cell" lineBreakMode="clipping" title="Want to keep updated?" id="3ad-ri-H5Y">
@@ -160,7 +146,7 @@ DQ
                         <rect key="frame" x="16" y="95" width="528" height="5"/>
                     </box>
                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="t0E-5m-5Wc">
-                        <rect key="frame" x="14" y="131" width="132" height="24"/>
+                        <rect key="frame" x="14" y="203" width="132" height="24"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="20" id="1dL-3C-ZSj"/>
                         </constraints>
@@ -185,18 +171,16 @@ DQ
                     <constraint firstItem="udT-lF-zKm" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" constant="16" id="MZn-Dj-AOl"/>
                     <constraint firstItem="udT-lF-zKm" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="16" id="OEk-2C-3UQ"/>
                     <constraint firstAttribute="bottom" secondItem="eY6-hS-6X6" secondAttribute="bottom" constant="16" id="Oke-HN-RRc"/>
-                    <constraint firstItem="t0E-5m-5Wc" firstAttribute="top" secondItem="7PC-sc-V9a" secondAttribute="bottom" constant="16" id="Onc-YA-uOL"/>
                     <constraint firstItem="PFI-UJ-nv7" firstAttribute="leading" secondItem="udT-lF-zKm" secondAttribute="trailing" constant="8" id="P3y-NY-qzt"/>
-                    <constraint firstItem="7PC-sc-V9a" firstAttribute="leading" secondItem="udT-lF-zKm" secondAttribute="leading" id="TOq-M3-jlQ"/>
+                    <constraint firstItem="t0E-5m-5Wc" firstAttribute="top" secondItem="wdp-Vx-SFy" secondAttribute="bottom" constant="16" id="PaW-tZ-bpj"/>
                     <constraint firstItem="wdp-Vx-SFy" firstAttribute="leading" secondItem="udT-lF-zKm" secondAttribute="leading" id="UQE-eG-ceo"/>
                     <constraint firstItem="Bnn-dY-5vI" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" constant="16" id="XDb-iz-b3f"/>
                     <constraint firstItem="w0R-LT-WzY" firstAttribute="bottom" secondItem="AJd-fC-cWE" secondAttribute="top" constant="-8" id="Xez-qZ-rnL"/>
+                    <constraint firstItem="Vnv-3I-Nmy" firstAttribute="top" secondItem="t0E-5m-5Wc" secondAttribute="bottom" constant="16" id="YQO-m2-9jR"/>
                     <constraint firstItem="wdp-Vx-SFy" firstAttribute="top" secondItem="PFI-UJ-nv7" secondAttribute="bottom" constant="12" id="agA-17-4Yt"/>
                     <constraint firstItem="QPA-Ty-yka" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="16" id="agf-4s-igX"/>
-                    <constraint firstItem="Vnv-3I-Nmy" firstAttribute="top" secondItem="wdp-Vx-SFy" secondAttribute="bottom" constant="16" id="cJH-Fk-dc0"/>
                     <constraint firstItem="QPA-Ty-yka" firstAttribute="bottom" secondItem="w0R-LT-WzY" secondAttribute="top" constant="-8" id="dXo-bl-19U"/>
                     <constraint firstAttribute="trailing" secondItem="eY6-hS-6X6" secondAttribute="trailing" constant="16" id="qqw-ZX-QOK"/>
-                    <constraint firstItem="7PC-sc-V9a" firstAttribute="top" secondItem="Vnv-3I-Nmy" secondAttribute="bottom" constant="16" id="vXx-Y8-LgS"/>
                     <constraint firstAttribute="trailing" secondItem="jqU-bc-Phd" secondAttribute="trailing" constant="16" id="vaz-Lc-0CO"/>
                     <constraint firstItem="Vnv-3I-Nmy" firstAttribute="leading" secondItem="udT-lF-zKm" secondAttribute="leading" id="xI4-ov-O73"/>
                     <constraint firstItem="PFI-UJ-nv7" firstAttribute="centerY" secondItem="udT-lF-zKm" secondAttribute="centerY" id="xJ7-bv-yL4"/>
@@ -204,7 +188,7 @@ DQ
                     <constraint firstItem="QPA-Ty-yka" firstAttribute="top" secondItem="jqU-bc-Phd" secondAttribute="bottom" constant="8" id="yI5-7z-lKi"/>
                 </constraints>
             </view>
-            <point key="canvasLocation" x="13" y="272"/>
+            <point key="canvasLocation" x="13" y="271.5"/>
         </window>
     </objects>
     <resources>

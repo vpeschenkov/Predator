@@ -1,5 +1,4 @@
-![Predator Screensaver](assets/preview.png)
-
+![Predator Screensaver](assets/predator-preview-1.png)
 <p align="center">
   <img src="https://img.shields.io/badge/platform-osx-brightgreen.svg"/>
   <img src="https://img.shields.io/github/release/vpeschenkov/Predator.svg"/>
@@ -9,15 +8,17 @@
 
 # Predator
 
-**Predator** is a minimalistic screensaver for macOS based on predator's countdown timer. Don't worry your mac doesn't blow 😄. It is completely open source, feel free to contribute!
+Do you love the science-fiction film Predator, don't you? If it is so, this screensaver will bring you that nostalgic about those years also as turn your mac into the Predator clock. Don't worry your mac doesn't blow 😄.
+
+It is completely open source, feel free to contribute!
 
 ## Compatibility
 
-Requires OS X El Capitan 10.11 and newer
+Requires OS X El Capitan 10.12 or above
 
 ## Installation
 
-1. [Click here to download the latest release](https://github.com/vpeschenkov/Predator/releases/download/1.0.5/Predator.saver.zip)
+1. [Click here to download the latest release](https://github.com/vpeschenkov/Predator/releases/download/1.0.6/Predator.saver.zip)
 2. Open **Predator.saver** (double click)
 3. `"Predator.saver" can't be opened because it is from an unidentified developer` will appear, press `OK`
 4. Open `Preferences`
@@ -31,80 +32,21 @@ If you see an error message saying "This app is damaged and can't be opened, you
 
 ## Features
 
-- Support 12-h and 24-h clock 
-- Select which color you want to see
-- Reverse shapes filling
-
-<p align="center">
-  <img src="assets/settings.png" alt="Predator Settings">
-</p>
+- Choose any color you wish to see
+- Choose between 12-h and 24-h clock formats
+- Remove meaningless lines and get it exactly like in the movie
+- and others 🙂
+  
+![Predator - AM/PM Support](assets/predator-preview-2.png)
+![Predator - Choose any color you wish to see!](assets/predator-preview-3.png)
+![Predator - Remove meaningless lines and get it exactly like in the movie!](assets/predator-preview-4.png)
 
 ## Predator’s clock rules
 
-The rules are pretty simple, and you wouldn’t spend much time to learn them.
+The rules are pretty simple, and you wouldn’t spend much time to learn them:
 
-### 24-hour clock rules
-
-#### 1 digits (0-2)
-
-| 0                                                                     | 1                                                                     | 2                                                                      |
-|-----------------------------------------------------------------------|-----------------------------------------------------------------------|------------------------------------------------------------------------|
-| <img src="assets/24-h%20clock/1st%20digit/24h-1-0.png" width=90> | <img src="assets/24-h%20clock/1st%20digit/24h-1-1.png" width=90> | <img src="assets/24-h%20clock/1st%20digit/24h-1-2.png" width=90>  |
-
-#### 3 digits (0-5)
-
-| 0                                                                     | 1                                                                     | 2                                                                     | 3                                                                     | 4                                                                     |
-|-----------------------------------------------------------------------|-----------------------------------------------------------------------|-----------------------------------------------------------------------|-----------------------------------------------------------------------|-----------------------------------------------------------------------|
-| <img src="assets/24-h%20clock/3rd%20digit/24h-3-0.png" width=90> | <img src="assets/24-h%20clock/3rd%20digit/24h-3-1.png" width=90> | <img src="assets/24-h%20clock/3rd%20digit/24h-3-2.png" width=90> | <img src="assets/24-h%20clock/3rd%20digit/24h-3-3.png" width=90> | <img src="assets/24-h%20clock/3rd%20digit/24h-3-4.png" width=90> |
-
-| 5                                                                     |
-|-----------------------------------------------------------------------|
-| <img src="assets/24-h%20clock/3rd%20digit/24h-3-5.png" width=90> |
-
-
-#### 2 & 4 digits (0-9)
-
-| 0                                                                                 | 1                                                                                 | 2                                                                                 | 3                                                                                 | 4                                                                                 |
-|-----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
-| <img src="assets/24-h%20clock/2nd%20&%204th%20digits/24h-24-0.png" width=90> | <img src="assets/24-h%20clock/2nd%20&%204th%20digits/24h-24-1.png" width=90> | <img src="assets/24-h%20clock/2nd%20&%204th%20digits/24h-24-2.png" width=90> | <img src="assets/24-h%20clock/2nd%20&%204th%20digits/24h-24-3.png" width=90> | <img src="assets/24-h%20clock/2nd%20&%204th%20digits/24h-24-4.png" width=90> |
-
-| 5                                                                                 | 6                                                                                 | 7                                                                                 | 8                                                                                 | 9                                                                                 |
-|-----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
-| <img src="assets/24-h%20clock/2nd%20&%204th%20digits/24h-24-5.png" width=90> | <img src="assets/24-h%20clock/2nd%20&%204th%20digits/24h-24-6.png" width=90> | <img src="assets/24-h%20clock/2nd%20&%204th%20digits/24h-24-7.png" width=90> | <img src="assets/24-h%20clock/2nd%20&%204th%20digits/24h-24-8.png" width=90> | <img src="assets/24-h%20clock/2nd%20&%204th%20digits/24h-24-9.png" width=90> |
-
-### 12-hour clock rules
-
-#### 1 digits (0-1)
-
-| 0                                                                     | 1                                                                     |
-|-----------------------------------------------------------------------|-----------------------------------------------------------------------|
-| <img src="assets/12-h%20clock/1st%20digit/12h-1-0.png" width=90> | <img src="assets/12-h%20clock/1st%20digit/12h-1-1.png" width=90> |
-
-#### 3 digits (0-5)
-
-| 0                                                                     | 1                                                                     | 2                                                                     | 3                                                                     | 4                                                                     |
-|-----------------------------------------------------------------------|-----------------------------------------------------------------------|-----------------------------------------------------------------------|-----------------------------------------------------------------------|-----------------------------------------------------------------------|
-| <img src="assets/12-h%20clock/3rd%20digit/12h-3-0.png" width=90> | <img src="assets/12-h%20clock/3rd%20digit/12h-3-1.png" width=90> | <img src="assets/12-h%20clock/3rd%20digit/12h-3-2.png" width=90> | <img src="assets/12-h%20clock/3rd%20digit/12h-3-3.png" width=90> | <img src="assets/12-h%20clock/3rd%20digit/12h-3-4.png" width=90> |
-
-| 5                                                                     |
-|-----------------------------------------------------------------------|
-| <img src="assets/12-h%20clock/3rd%20digit/12h-3-5.png" width=90> |
-
-#### 2 & 4 digits (0-9)
-
-| 0                                                                                 | 1                                                                                 | 2                                                                                 | 3                                                                                 | 4                                                                                 |
-|-----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
-| <img src="assets/12-h%20clock/2nd%20&%204th%20digits/12h-24-0.png" width=90> | <img src="assets/12-h%20clock/2nd%20&%204th%20digits/12h-24-1.png" width=90> | <img src="assets/12-h%20clock/2nd%20&%204th%20digits/12h-24-2.png" width=90> | <img src="assets/12-h%20clock/2nd%20&%204th%20digits/12h-24-3.png" width=90> | <img src="assets/12-h%20clock/2nd%20&%204th%20digits/12h-24-4.png" width=90> |
-
-| 5                                                                                 | 6                                                                                 | 7                                                                                 | 8                                                                                 | 9                                                                                 |
-|-----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
-| <img src="assets/12-h%20clock/2nd%20&%204th%20digits/12h-24-5.png" width=90> | <img src="assets/12-h%20clock/2nd%20&%204th%20digits/12h-24-6.png" width=90> | <img src="assets/12-h%20clock/2nd%20&%204th%20digits/12h-24-7.png" width=90> | <img src="assets/12-h%20clock/2nd%20&%204th%20digits/12h-24-8.png" width=90> | <img src="assets/12-h%20clock/2nd%20&%204th%20digits/12h-24-9.png" width=90> |
-
-#### AM/PM
-
-| AM     | PM     |
-|--------|--------|
-| ![][AM]| ![][PM]|
+![Predator Screensaver](assets/predator-preview-5.png)
+![Predator Screensaver](assets/predator-preview-6.png)
 
 ## Uninstallation 
 
@@ -125,6 +67,3 @@ Victor Peschenkov, v.peschenkov@gmail.com
 ## License
 
 `PredatorClock` is available under the Apache 2.0 license. See the [LICENSE](LICENSE) file for more info.
-
-[AM]: assets/AM:PM/AM.png
-[PM]: assets/AM:PM/PM.png

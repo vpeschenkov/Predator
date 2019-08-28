@@ -13,14 +13,12 @@
 //  limitations under the License.
 
 import Cocoa
-import Sparkle
 
 final class PreferencesWindowController: NSWindowController {
     @IBOutlet var colorPicker: NSColorWell!
     @IBOutlet var previewView: NSView!
     @IBOutlet var reverseCheckbox: NSButton!
     @IBOutlet var twentyHourCheckbox: NSButton!
-    @IBOutlet var autoInstallUpdatesCheckbox: NSButton!
     @IBOutlet var drawEmptyDigitsCheckbox: NSButton!
     @IBOutlet var versionLabel: NSTextField!
     
@@ -37,19 +35,6 @@ final class PreferencesWindowController: NSWindowController {
         if let version = preferences.bundle.infoDictionary?["CFBundleShortVersionString"] as? String {
             versionLabel.stringValue = "Predator's version  \(version)"
         }
-        
-        // Sparkle
-        NotificationCenter.default.addObserver(
-            self,
-            selector: #selector(sparkleWillRestart),
-            name: .SUUpdaterWillRestart,
-            object: nil
-        )
-        
-        autoInstallUpdatesCheckbox.state = preferences.autoUpdates ? .on : .off
-        
-        let updater = SUUpdater(for: Bundle(for: PreferencesWindowController.self))
-        updater?.checkForUpdatesInBackground()
     }
     
     @objc func sparkleWillRestart() {
@@ -77,10 +62,6 @@ extension PreferencesWindowController {
     @IBAction func twentyFourClockFormatAction(_ sender: NSButton) {
         preferences.twentyFourHours = sender.state == .on ? true : false
         previewView.setNeedsDisplay(previewView.bounds)
-    }
-    
-    @IBAction func autoInstallUpdatesAction(_ sender: NSButton) {
-        preferences.autoUpdates = sender.state == .on ? true : false
     }
     
     @IBAction func drawEmptyDigitsAction(_ sender: NSButton) {

@@ -64,17 +64,6 @@ final class Preferences: Configuration {
         }
     }
     
-    public var autoUpdates: Bool {
-        set {
-            defaults.set(newValue, forKey: Key.autoInstallUpdates)
-            defaults.synchronize()
-        }
-        
-        get {
-            return defaults.bool(forKey: Key.autoInstallUpdates)
-        }
-    }
-    
     public var drawEmptyDigits: Bool {
         set {
             defaults.set(newValue, forKey: Key.drawEmptyDigits)

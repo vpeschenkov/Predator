@@ -16,11 +16,10 @@ import Cocoa
 import PredatorCore
 
 class MainConfiguration: Configuration {
-    var primaryColor: NSColor = .red
+    var primaryColor: NSColor = .orange
     var reverse: Bool = false
     var twentyFourHours: Bool = true
     var twelveHours: Bool = false
-    var autoUpdates: Bool = false
     var drawEmptyDigits: Bool = false
 }
 

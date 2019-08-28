@@ -16,7 +16,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "35C15316228219EB005B24A9"
                BuildableName = "Predator.app"
-               BlueprintName = "PredatorSandbox"
+               BlueprintName = "PredatorApp"
                ReferencedContainer = "container:Predator.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -34,7 +34,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "35C15316228219EB005B24A9"
             BuildableName = "Predator.app"
-            BlueprintName = "PredatorSandbox"
+            BlueprintName = "PredatorApp"
             ReferencedContainer = "container:Predator.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -57,7 +57,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "35C15316228219EB005B24A9"
             BuildableName = "Predator.app"
-            BlueprintName = "PredatorSandbox"
+            BlueprintName = "PredatorApp"
             ReferencedContainer = "container:Predator.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -76,7 +76,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "35C15316228219EB005B24A9"
             BuildableName = "Predator.app"
-            BlueprintName = "PredatorSandbox"
+            BlueprintName = "PredatorApp"
             ReferencedContainer = "container:Predator.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

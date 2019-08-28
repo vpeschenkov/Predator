@@ -91,8 +91,8 @@ final public class PredatorClock {
         let p4 = CGPoint(x: p1.x - shape.width * 1.013, y: p1.y - shape.width * 0.934)
         let p5 = CGPoint(x: p1.x + shape.width * 0.113, y: p1.y - shape.width * 0.234)
         let p6 = CGPoint(x: p4.x - shape.width * 0.137, y: p4.y - shape.height * 0.431)
-        let p7 = CGPoint(x: p1.x, y: p6.y - shape.width * 1.543)
-        let p8 = CGPoint(x: p1.x + shape.width * 0.313, y: p7.y - shape.height)
+        let p7 = CGPoint(x: p1.x - shape.width * 0.068, y: p6.y - shape.width * 1.543)
+        let p8 = CGPoint(x: p1.x + shape.width * 0.237, y: p7.y - shape.height)
         let p9 = CGPoint(x: p1.x + shape.width * 0.268, y: p6.y - shape.width * 0.713)
         // Drawing
         let isEnabled = { (value: Int,  part: Int) -> Bool in
@@ -130,8 +130,8 @@ final public class PredatorClock {
         let p4 = CGPoint(x: p1.x - shape.width * 1.013, y: p1.y - shape.width * 0.934)
         let p5 = CGPoint(x: p1.x + shape.width * 0.113, y: p1.y - shape.width * 0.234)
         let p6 = CGPoint(x: p4.x - shape.width * 0.137, y: p4.y - shape.height * 0.431)
-        let p7 = CGPoint(x: p1.x, y: p6.y - shape.width * 1.543)
-        let p8 = CGPoint(x: p1.x + shape.width * 0.313, y: p7.y - shape.height)
+        let p7 = CGPoint(x: p1.x - shape.width * 0.068, y: p6.y - shape.width * 1.543)
+        let p8 = CGPoint(x: p1.x + shape.width * 0.237, y: p7.y - shape.height)
         let p9 = CGPoint(x: p1.x + shape.width * 0.268, y: p6.y - shape.width * 0.713)
         // Drawing
         draw(p1, 90, (value >= 1))
@@ -162,8 +162,8 @@ final public class PredatorClock {
         let p4 = CGPoint(x: p1.x - shape.width * 1.013, y: p1.y - shape.width * 0.934)
         let p5 = CGPoint(x: p1.x + shape.width * 0.113, y: p1.y - shape.width * 0.234)
         let p6 = CGPoint(x: p4.x - shape.width * 0.137, y: p4.y - shape.height * 0.431)
-        let p7 = CGPoint(x: p1.x, y: p6.y - shape.width * 1.543)
-        let p8 = CGPoint(x: p1.x + shape.width * 0.313, y: p7.y - shape.height)
+        let p7 = CGPoint(x: p1.x - shape.width * 0.068, y: p6.y - shape.width * 1.543)
+        let p8 = CGPoint(x: p1.x + shape.width * 0.237, y: p7.y - shape.height)
         let p9 = CGPoint(x: p1.x + shape.width * 0.268, y: p6.y - shape.width * 0.713)
         // Drawing
         draw(p1, 90, (value >= 1))
@@ -192,8 +192,8 @@ final public class PredatorClock {
         let p4 = CGPoint(x: p1.x - shape.width * 1.013, y: p1.y - shape.width * 0.934)
         let p5 = CGPoint(x: p1.x + shape.width * 0.113, y: p1.y - shape.width * 0.234)
         let p6 = CGPoint(x: p4.x - shape.width * 0.137, y: p4.y - shape.height * 0.431)
-        let p7 = CGPoint(x: p1.x, y: p6.y - shape.width * 1.543)
-        let p8 = CGPoint(x: p1.x + shape.width * 0.313, y: p7.y - shape.height)
+        let p7 = CGPoint(x: p1.x - shape.width * 0.068, y: p6.y - shape.width * 1.543)
+        let p8 = CGPoint(x: p1.x + shape.width * 0.237, y: p7.y - shape.height)
         let p9 = CGPoint(x: p1.x + shape.width * 0.268, y: p6.y - shape.width * 0.713)
         // Drawing
         draw(p1, 90, (value >= 1))

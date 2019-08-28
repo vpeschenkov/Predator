@@ -13,6 +13,5 @@ public protocol Configuration {
     var reverse: Bool { get }
     var twentyFourHours: Bool { get }
     var twelveHours: Bool { get }
-    var autoUpdates: Bool { get }
     var drawEmptyDigits: Bool { get }
 }
