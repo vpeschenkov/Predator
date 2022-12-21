@@ -8,7 +8,7 @@
 
 # Predator
 
-Do you love the science-fiction film Predator, don't you? If it is so, this screensaver will bring you that nostalgic about those years also as turn your mac into the Predator clock. Don't worry your mac doesn't blow 😄.
+If you are a fan of the science-fiction film Predator, this screensaver is for you! It will transport you back to those nostalgicically memorable years and transform your Mac into a Predator clock. Don't worry, your Mac won't blow up 😄
 
 It is completely open source, feel free to contribute!
 
@@ -32,10 +32,10 @@ If you see an error message saying "This app is damaged and can't be opened, you
 
 ## Features
 
-- Choose any color you wish to see
-- Choose between 12-h and 24-h clock formats
-- Remove meaningless lines and get it exactly like in the movie
-- and others 🙂
+- Customize the color of the clock to your preference
+- Select between 12-hour and 24-hour clock formats
+- Remove unnecessary lines to achieve the look of the clock in the movie
+- Additional features and customization options are also available 🙂
   
 ![Predator - AM/PM Support](assets/predator-preview-2.png)
 ![Predator - Choose any color you wish to see!](assets/predator-preview-3.png)
