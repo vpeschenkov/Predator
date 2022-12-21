@@ -21,10 +21,11 @@ final class PredatorPreviewView: NSView {
     override func draw(_ dirtyRect: NSRect) {
         super.draw(dirtyRect)
         
-        if let context = NSGraphicsContext.current?.cgContext {
-            context.setFillColor(CGColor(red: 0.0, green: 0.0, blue: 0.0, alpha: 1.0))
-            context.fill(dirtyRect)
-            predator.draw(in: dirtyRect, context: context)
+        guard let context = NSGraphicsContext.current?.cgContext else {
+            return
         }
+        context.setFillColor(CGColor(red: 0.0, green: 0.0, blue: 0.0, alpha: 1.0))
+        context.fill(dirtyRect)
+        predator.draw(in: dirtyRect, context: context)
     }
 }
