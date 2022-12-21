@@ -18,13 +18,12 @@ Requires OS X El Capitan 10.12 or above
 
 ## Installation
 
-1. [Click here to download the latest release](https://github.com/vpeschenkov/Predator/releases/download/1.0.6/Predator.saver.zip)
-2. Open **Predator.saver** (double click)
-3. `"Predator.saver" can't be opened because it is from an unidentified developer` will appear, press `OK`
-4. Open `Preferences`
-5. Select `Security & Privacy`
-6. Select `General`
-7. On the bottom side, select `Open Anyway`
+- Download the latest release of Predator from the following [link](https://github.com/vpeschenkov/Predator/releases/download/1.0.6/Predator.saver.zip)
+- Double-click the downloaded file, named Predator.saver
+- If you see the message "Predator.saver" can't be opened because it is from an unidentified developer, click OK
+- Open the Preferences app
+- Select the Security & Privacy option
+- In the General tab, you should see a message near the bottom of the window that says Predator.saver was blocked from opening because it is not from an identified developer. Click the Open Anyway button to allow the app to run.
 
 If you see an error message saying "This app is damaged and can't be opened, you should move it to the trash", download the file with Safari, to prevent macOS Gatekeeper from throwing that error. Note that some outdated unzip software may cause that issue too.
 
