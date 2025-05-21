@@ -8,13 +8,15 @@
 
 # Predator
 
-If you are a fan of the science-fiction film Predator, this screensaver is for you! It will transport you back to those nostalgicically memorable years and transform your Mac into a Predator clock. Don't worry, your Mac won't blow up 😄
+Relive the iconic sci-fi vibes of Predator!
+This screensaver turns your Mac into a stylish Predator-style clock — just like in the movie.
+Don’t worry, your Mac won’t self-destruct 😄
 
-It is completely open source, feel free to contribute!
+> Completely open-source — contributions are welcome!
 
 ## Compatibility
 
-Requires OS X El Capitan 10.12 or above
+Requires macOS 11.5 or newer
 
 ## Installation
 
@@ -27,22 +29,22 @@ Requires OS X El Capitan 10.12 or above
 
 If you see an error message saying "This app is damaged and can't be opened, you should move it to the trash", download the file with Safari, to prevent macOS Gatekeeper from throwing that error. Note that some outdated unzip software may cause that issue too.
 
-**Important**: If you haven't quit System Preferences before installation and were upgrading from a previous version, I strongly recommend you quit the application after installation, then reopen it, as updated Swift screensavers aren't loaded correctly in an active System Preferences session.
+> ⚠️ Tip: After installing or upgrading, quit and reopen System Preferences to ensure proper loading
 
 ## Features
 
-- Customize the color of the clock to your preference
-- Select between 12-hour and 24-hour clock formats
-- Remove unnecessary lines to achieve the look of the clock in the movie
-- Additional features and customization options are also available 🙂
+- Fully customizable clock colors
+- Switch between 12-hour and 24-hour formats
+- Optional movie-accurate appearance by hiding UI elements
+- Designed with flexibility and nostalgia in mind
   
 ![Predator - AM/PM Support](assets/predator-preview-2.png)
 ![Predator - Choose any color you wish to see!](assets/predator-preview-3.png)
 ![Predator - Remove meaningless lines and get it exactly like in the movie!](assets/predator-preview-4.png)
 
-## Predator’s clock rules
+## How the Clock Works
 
-The rules are pretty simple, and you wouldn’t spend much time to learn them:
+No need to learn Yautja language — the Predator clock rules are easy to grasp:
 
 ![Predator Screensaver](assets/predator-preview-5.png)
 ![Predator Screensaver](assets/predator-preview-6.png)
@@ -54,10 +56,11 @@ The rules are pretty simple, and you wouldn’t spend much time to learn them:
 
 ## Contributing
 
-- If you **need help** or you'd like to **ask a general question**, open an issue.
-- If you **found a bug**, open an issue.
-- If you **have a feature request**, open an issue.
-- If you **want to contribute**, submit a pull request.
+Want to help improve Predator? Contributions are welcome!
+
+- 📌 Found a bug? [Open an issue](https://github.com/vpeschenkov/Predator/issues)
+- 💡 Have an idea? [Share a feature request](https://github.com/vpeschenkov/Predator/issues)
+- 👨‍💻 Ready to code? [Submit a pull request](https://github.com/vpeschenkov/Predator/pulls)
 
 ## Author
 
@@ -66,3 +69,9 @@ Victor Peschenkov, v.peschenkov@gmail.com
 ## License
 
 `PredatorClock` is available under the Apache 2.0 license. See the [LICENSE](LICENSE) file for more info.
+
+## Keywords
+
+`macOS screensaver`, `Predator screensaver`, `sci-fi clock`, `Swift screensaver`,  
+`digital clock`, `Predator movie gadget`, `custom clock screensaver`, `retro tech`,  
+`open source mac screensaver`, `alien countdown clock`
