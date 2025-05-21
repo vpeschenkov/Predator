@@ -80,6 +80,10 @@ extension PredatorView {
         timer?.invalidate()
         timer = nil
     }
+    // POTENTIAL MEMORY LEAK FIX
+    deinit {
+        timer?.invalidate()
+    }
 }
 
 // MARK: - Timer
