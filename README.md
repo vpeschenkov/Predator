@@ -52,7 +52,7 @@ No need to learn Yautja language — the Predator clock rules are easy to grasp:
 ## Uninstallation 
 
 - Right-click on Predator in System Preferences and select `Delete Predator`, or
-- Delete `PredatorClock.saver` either in `/Library/Screen Savers` or `/Users/USERNAME/Library/Screen Savers`.
+- Delete `Predator.saver` either in `/Library/Screen Savers` or `/Users/USERNAME/Library/Screen Savers`.
 
 ## Contributing
 
