@@ -37,6 +37,11 @@ final class PredatorView: ScreenSaverView {
         }
     }
     
+    // POTENTIAL MEMORY LEAK FIX
+    deinit {
+        timer?.invalidate()
+    }
+    
     // MARK: - Pirivate Methods
     
     private func configure() {
@@ -74,15 +79,11 @@ extension PredatorView {
             repeats: true
         )
     }
-    
+
     override func stopAnimation() {
         super.stopAnimation()
         timer?.invalidate()
         timer = nil
-    }
-    // POTENTIAL MEMORY LEAK FIX
-    deinit {
-        timer?.invalidate()
     }
 }
 
